@@ -26,6 +26,29 @@ import { FaTiktok } from "react-icons/fa6";
 
 export default function Home() {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [logos, setLogos] = useState([]);
+
+    React.useEffect(() => {
+        const fetchLogos = async () => {
+            try {
+                // Carrega o arquivo logos.json
+                const response = await fetch("/logos.json");
+                if (!response.ok) {
+                    throw new Error("Erro ao carregar logos.json");
+                }
+
+                const data = await response.json();
+                // Monta os caminhos completos das imagens
+                const logoPaths = data.map((name) => `/logos/${name}`);
+                console.log(logoPaths)
+                setLogos(logoPaths);
+            } catch (error) {
+                console.error("Erro ao buscar as logos:", error);
+            }
+        };
+
+        fetchLogos();
+    }, []);
 
     const testemunhos = [
         {
@@ -420,17 +443,19 @@ export default function Home() {
                         className="w-full max-w-xs sm:max-w-md lg:max-w-2xl"  // Ajuste a largura para dispositivos móveis
                     >
                         <CarouselContent>
-                            {Array.from({ length: 12 }).map((_, index) => (
-                                <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/6 user-select-none">
-                                    <div className="p-1">
-                                        <Card className="shadow-none">
-                                            <CardContent className="flex aspect-square items-center justify-center p-6">
-                                                <span className="text-3xl font-semibold">{index + 1}</span>
-                                            </CardContent>
-                                        </Card>
-                                    </div>
-                                </CarouselItem>
-                            ))}
+                            {logos.map((logo, index) => {
+                                return (
+                                    <CarouselItem key={index} className="md:basis-1/3 lg:max-w-[180px] user-select-none">
+                                        <div className="p-1">
+                                            <Card className="shadow-none border-none ">
+                                                <CardContent className="flex aspect-square items-center justify-center p-6">
+                                                    <Image src={logo} alt={logo} width={200} height={200} className="brightness-0 recolor-logos " loading="lazy" />
+                                                </CardContent>
+                                            </Card>
+                                        </div>
+                                    </CarouselItem>
+                                )
+                            })}
                         </CarouselContent>
                     </Carousel>
                 </div>
@@ -555,7 +580,7 @@ export default function Home() {
                             <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
                         </div>
 
-                        <div className="grid grid-cols-1 place-content-center place-items-center text-center lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">
+                        <div className="grid grid-cols-1 place-content-center place-items-center lg:place-items-start lg:place-content-start text-center lg:text-start lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">
                             <div>
                                 <h4 className="mb-2 font-medium">Navegação</h4>
                                 <ul className="text-purple-200 space-y-2">

@@ -115,3 +115,7 @@ body {
     transform: translateY(0px);
   }
 }
+
+.recolor-logos {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(60%) saturate(5070%) hue-rotate(268deg) brightness(86%) contrast(98%);
+}
