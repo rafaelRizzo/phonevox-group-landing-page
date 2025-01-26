@@ -91,6 +91,10 @@ body {
   }
 }
 
+::selection {
+  background: rgba(240, 171, 252, .5);
+}
+
 .bg-primary-purple {
   background-color: #8609cb;
 }
