@@ -45,7 +45,7 @@ export default function Home() {
                     <div>
                         <li>
                             <Link href="/">
-                                <Image src="/logo-phonevox.png" alt="Logo da empresa" width={200} height={50} className="max-h-[42px]" />
+                                <Image src="/logo-phonevox.webp" alt="Logo da empresa" width={200} height={50} className="max-h-[42px]" loading="eager" />
                             </Link>
                         </li>
                     </div>
@@ -91,7 +91,7 @@ export default function Home() {
                         autoPlay
                         muted
                         playsInline
-                        poster="/poster-video.png" // Adiciona a imagem do poster
+                        poster="/poster-video.webp" // Adiciona a imagem do poster
                     >
                         <source src="/video.mp4" type="video/mp4" />
                         Seu navegador não suporta o elemento de vídeo.
@@ -478,7 +478,7 @@ export default function Home() {
                     {/* Logo e texto descritivo */}
                     <div className="flex flex-col items-center lg:flex-row justify-between">
                         <div className="flex flex-col items-center max-w-xs gap-2">
-                            <Image src="/logo-phonevox-white.png" alt="Logo da empresa" width={200} height={200} />
+                            <Image src="/logo-phonevox-white.webp" alt="Logo da empresa" width={200} height={200} loading="lazy" />
                             <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
                         </div>
 
@@ -506,22 +506,22 @@ export default function Home() {
                                 <h4 className="mb-2 font-medium">Redes sociais</h4>
                                 <ul className="flex gap-5 text-purple-200">
                                     <li>
-                                        <Link href="https://www.instagram.com/phonevox.group" target="_blank" >
+                                        <Link href="https://www.instagram.com/phonevox.group" target="_blank" aria-label="Instagram Phonevox Group">
                                             <IoLogoInstagram className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.linkedin.com/company/phonevox" target="_blank" >
+                                        <Link href="https://www.linkedin.com/company/phonevox" target="_blank" aria-label="Linkedin Phonevox Group">
                                             <FaLinkedinIn className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.facebook.com/phonevoxcontactcenter" target="_blank" >
+                                        <Link href="https://www.facebook.com/phonevoxcontactcenter" target="_blank" aria-label="Facebook Phonevox Group">
                                             <IoLogoFacebook className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.tiktok.com/@phonevox" target="_blank" >
+                                        <Link href="https://www.tiktok.com/@phonevox" target="_blank" aria-label="Tiktok Phonevox Group">
                                             <FaTiktok className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>

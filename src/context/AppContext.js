@@ -39,7 +39,7 @@ export const AppProvider = ({ children }) => {
                 return;
             }
             try {
-                const response = await axios.get("/logos.json");
+                const response = await axios.get("/jsons/logos.json");
                 const logoPaths = response.data.map((name) => `/logos/${name}`);
                 setLogos(logoPaths);
                 saveToCookie("logos", logoPaths);
@@ -55,7 +55,7 @@ export const AppProvider = ({ children }) => {
                 return;
             }
             try {
-                const response = await axios.get("/testemunhos.json");
+                const response = await axios.get("/jsons/testemunhos.json");
                 setTestemunhos(response.data);
                 saveToCookie("testemunhos", response.data);
             } catch (error) {
@@ -70,7 +70,7 @@ export const AppProvider = ({ children }) => {
                 return;
             }
             try {
-                const response = await axios.get("/faq.json");
+                const response = await axios.get("/jsons/faq.json");
                 setPerguntasFaq(response.data);
                 saveToCookie("faq", response.data);
             } catch (error) {

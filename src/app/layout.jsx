@@ -1,17 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// Importando a fonte Poppins com o estilo e peso desejado
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap',  // Isso ajuda a garantir um carregamento rápido da fonte
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
   title: "Phonevox - Callcenter 24/7 com VOIP e PABX para Empresas",
   description: "A Phonevox oferece soluções inovadoras de atendimento ao cliente para empresas de todos os portes. Aumente a produtividade com VOIP, PABX na nuvem, call center e suporte 24/7.",
@@ -31,10 +27,10 @@ export const metadata = {
 
   // Favicon and Icons
   icons: {
-    icon: "/favicon.jpg",
-    apple: "/favicon.jpg",
-    android: "/favicon.jpg",
-    other: "/favicon.jpg", // Ícone para dispositivos maiores
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+    android: "/favicon.ico",
+    other: "/favicon.ico", // Ícone para dispositivos maiores
   },
 
   // Dados Estruturados (Schema Markup - JSON-LD)
@@ -70,7 +66,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${poppins.className} antialiased`}>
         <AppProvider>
           {children}
         </AppProvider>
