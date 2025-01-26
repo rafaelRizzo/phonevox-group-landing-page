@@ -361,7 +361,9 @@ export default function Home() {
                                 </li>
                             </ul>
 
-                            <Button className="bg-primary-purple w-full mt-5">Saiba mais</Button>
+                            <Button className="bg-primary-purple w-full mt-5">
+                                <Link href="https://wa.me/551832568300" target="_blank">Saiba mais</Link>
+                            </Button>
                         </CardContent>
                     </Card>
 
@@ -412,7 +414,9 @@ export default function Home() {
                                 </li>
                             </ul>
 
-                            <Button className="bg-primary-purple w-full mt-5">Saiba mais</Button>
+                            <Button className="bg-primary-purple w-full mt-5">
+                                <Link href="https://wa.me/551832568300" target="_blank">Saiba mais</Link>
+                            </Button>
                         </CardContent>
                     </Card>
                 </div>
