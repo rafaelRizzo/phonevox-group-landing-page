@@ -13,6 +13,7 @@ import SloganSecundario from "@/components/appComponents/SloganSecundario";
 import Faq from "@/components/appComponents/Faq";
 import Rodape from "@/components/appComponents/Rodape";
 import Solucoes from "@/components/appComponents/Solucoes";
+import Ajuda from "@/components/appComponents/Ajuda";
 
 export default function Home() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -21,7 +22,7 @@ export default function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % testemunhos.length);
-        }, 6000); // Muda o depoimento a cada 6 segundos
+        }, 5000); // Muda o depoimento a cada 5 segundos
 
         return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
     }, [testemunhos.length]);
@@ -45,6 +46,8 @@ export default function Home() {
             <SloganSecundario />
 
             <Faq perguntasFaq={perguntasFaq} />
+
+            <Ajuda />
 
             <Rodape />
         </>

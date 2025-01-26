@@ -97,7 +97,7 @@ export default function Solucoes() {
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <p className="text-md">0800 ilimitado</p>
+                                    <p className="text-md">0800 sem tarifação</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />

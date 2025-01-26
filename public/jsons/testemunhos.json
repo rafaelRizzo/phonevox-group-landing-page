@@ -4,69 +4,83 @@
         "nome": "Aléxia Luíza",
         "empresa": "MJC TELECOM",
         "texto": "Excelente todos os atendentes. Sempre procurando ajudar e fazer o melhor para seus clientes.",
-        "foto": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "foto": "https://picsum.photos/200"
     },
     {
         "id": 2,
-        "nome": "João Pereira",
-        "empresa": "Tech Solutions",
-        "texto": "Ótimo suporte técnico, sempre rápidos e eficientes. Recomendo fortemente!",
-        "foto": "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Leandro Amaral",
+        "empresa": "SOFT TELECOM",
+        "texto": "Excelente empresa, tanto no suporte quanto no atendimento comercial ou financeiro. O CEO está de parabéns!!!",
+        "foto": "https://picsum.photos/201"
     },
     {
         "id": 3,
-        "nome": "Mariana Silva",
-        "empresa": "Global Corp",
-        "texto": "Serviço impecável, desde o atendimento até a entrega final. Estou impressionada!",
-        "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Rodrigo Pavinski",
+        "empresa": "ARR TECNOLOGIA",
+        "texto": "Excelente empresa. Sempre sou muito bem atendido.",
+        "foto": "https://picsum.photos/202"
     },
     {
         "id": 4,
-        "nome": "Carolina Nogueira",
-        "empresa": "Soft Solutions",
-        "texto": "Um atendimento impecável e soluções rápidas! Certamente, voltarei a contratar seus serviços.",
-        "foto": "https://images.unsplash.com/photo-1524503033411-c9566986fc8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Genesis Wanderley",
+        "empresa": "PIX TELECOM",
+        "texto": "A melhor empresa no segmento que conheço, nunca vi um atendimento tão antecioso, e desenrolado, voces estao de parabéns demais!",
+        "foto": "https://picsum.photos/203"
     },
     {
         "id": 5,
-        "nome": "Pedro Almeida",
-        "empresa": "Almeida & Co.",
-        "texto": "Não posso recomendar o suficiente! A equipe foi atenciosa e entregou tudo como prometido.",
-        "foto": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Vinicius Gilberto Bomb",
+        "empresa": "PORTAL QUEOPS",
+        "texto": "Atendimento de qualidade! A Phonevox nunca me deixa na mão",
+        "foto": "https://picsum.photos/204"
     },
     {
         "id": 6,
-        "nome": "Fernanda Costa",
-        "empresa": "Costa Studio",
-        "texto": "A experiência foi incrível! Cada detalhe foi pensado para garantir a satisfação do cliente.",
-        "foto": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Ivanise Sodré",
+        "empresa": "ASO CLINICA",
+        "texto": "Continuem assim! Não mudem!",
+        "foto": "https://picsum.photos/205"
     },
     {
         "id": 7,
-        "nome": "Gabriel Fernandes",
-        "empresa": "Inova Tech",
-        "texto": "Profissionalismo e eficiência definem o trabalho dessa equipe. Fiquei muito satisfeito com os resultados.",
-        "foto": "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Diego Trindade",
+        "empresa": "SEVEN INTERNET",
+        "texto": "Atendimento rápido e excelente. Obrigado Adrian, que me atendeu super de boa e me deu explicações fáceis de entender.",
+        "foto": "https://picsum.photos/206"
     },
     {
         "id": 8,
-        "nome": "Isabela Rocha",
-        "empresa": "Design Pro",
-        "texto": "Adorei o atendimento e a dedicação para atender minhas necessidades. Trabalho de alta qualidade!",
-        "foto": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Adriano Garcia",
+        "empresa": "ATOMO - ENERGIA VITAL",
+        "texto": "Excelente atendimento e profissionalismo.",
+        "foto": "https://picsum.photos/207"
     },
     {
         "id": 9,
-        "nome": "Laura Mendes",
-        "empresa": "Bright Future Co.",
-        "texto": "Foi uma experiência incrível trabalhar com eles. Altamente recomendados para qualquer projeto!",
-        "foto": "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Marcilio Maia",
+        "empresa": "ONETIS TECNOLOGIA",
+        "texto": "Super recomendo! Sempre me atenderam além das expectativas.",
+        "foto": "https://picsum.photos/208"
     },
     {
         "id": 10,
-        "nome": "Ricardo Lopes",
-        "empresa": "Visionary Inc.",
-        "texto": "A atenção aos detalhes e o compromisso com a qualidade realmente me impressionaram.",
-        "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nome": "Flavio Serra",
+        "empresa": "JCFW TELECOMUNICAÇÕES",
+        "texto": "Empresa competente que entrega o que promete.",
+        "foto": "https://picsum.photos/209"
+    },
+    {
+        "id": 11,
+        "nome": "Luciana Paiva",
+        "empresa": "MUSTANET",
+        "texto": "Educação excelente, agilidade e rapidez!",
+        "foto": "https://picsum.photos/210"
+    },
+    {
+        "id": 12,
+        "nome": "Rivaldo Nathy",
+        "empresa": "ANÔNIMO",
+        "texto": "Ótima empresa no ramo de Call center. Conheça também os serviços de Falevox e PABX.",
+        "foto": "https://picsum.photos/211"
     }
 ]

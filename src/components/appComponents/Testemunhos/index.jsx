@@ -14,16 +14,14 @@ export default function Testemunhos({ testemunhos, activeIndex }) {
 
                 <div className="container-carrousel w-full flex items-center justify-center">
                     {testemunhos.map((testemunho, index) => (
-                        <div
-                            key={testemunho.id}
-                            className={`carousel-card p-10 border rounded-3xl w-full lg:max-w-lg shadow transition-opacity duration-700 ${index === activeIndex ? "active-testemunhal" : "opacity-0 absolute"
-                                }`}
-                        >
+                        <div key={testemunho.id}
+                            className={`carousel-card p-10 border rounded-3xl w-full lg:max-w-lg max-h-[400px]  min-h-[400px] shadow transition-opacity duration-700 ${index === activeIndex ? "active-testemunhal" : "opacity-0 absolute"}`}>
                             <blockquote className="carousel-content">
                                 {/* Card top */}
                                 <div className="carousel-navigation flex items-center justify-center gap-5 mb-5">
                                     <div className="caroulse-photo-cliente">
-                                        <div className="min-h-12 min-w-12 max-h-12 max-w-12 rounded-full border bg-zinc-100 overflow-hidden aspect-square">
+                                        <div className="min-h-12 min-w-12 max-h-12 max-w-12 rounded-full border border-purple-700/15 bg-zinc-100 overflow-hidden aspect-square relative">
+                                            <div className="absolute flex h-full w-full top-0"></div>
                                             <Image
                                                 src={testemunho.foto}
                                                 alt={`Foto de ${testemunho.nome}`}
