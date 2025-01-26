@@ -114,7 +114,7 @@ export default function Home() {
         {
             id: 3,
             question: "E se eu não estiver satisfeito com o serviço?",
-            answer: "Não se preocupe, iremos fazer o que estiver me nosso alcance para sempre melhorar, mas caso aconteça, todos os nossos planos possuem uma garantia de 30 dias para pedir o seu dinheiro de volta."
+            answer: "Não se preocupe, iremos fazer o que estiver em nosso alcance para sempre melhorar, mas caso aconteça, todos os nossos planos possuem uma garantia de 30 dias para pedir o seu dinheiro de volta."
         },
         {
             id: 4,
@@ -531,7 +531,7 @@ export default function Home() {
             <section className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col border border-purple-700 rounded-3xl bg-purple-700 text-zinc-50 p-5 py-8 font-medium text-xl">
 
-                    <div className="flex flex-col lg:flex-row items-center justify-between">
+                    <div className="flex flex-col lg:flex-row items-center justify-between text-center lg:text-start">
                         <div className="flex flex-col justify-center mb-5 lg:mb-0 ">
                             <p className="text-purple-100/95">Precisa de mais informações?</p>
                             <p className="text-sm text-purple-300/80 font-light">Entre em contato com um de nossos especialistas para tirar suas dúvidas.</p>
@@ -550,7 +550,7 @@ export default function Home() {
                 <div className="mx-auto max-w-5xl">
                     {/* Logo e texto descritivo */}
                     <div className="flex flex-col items-center lg:flex-row justify-between">
-                        <div className="flex flex-col max-w-xs gap-2">
+                        <div className="flex flex-col items-center max-w-xs gap-2">
                             <Image src="/logo-phonevox-white.png" alt="Logo da empresa" width={200} height={200} />
                             <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
                         </div>
