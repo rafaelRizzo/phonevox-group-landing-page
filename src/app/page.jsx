@@ -310,7 +310,7 @@ export default function Home() {
             </section >
 
             {/* Parceiros */}
-            < section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10" >
+            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10" >
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Nossos parceiros</h2>
                     <h3 className="text-muted-foreground text-sm">Empresas que confiam em nosso potencial de potencializar seu atendimento</h3>
@@ -413,7 +413,7 @@ export default function Home() {
                 </div>
             </section >
 
-            {/*  */}
+            {/* Slogan secundário */}
             <section className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col gap-10 border border-purple-700 rounded-3xl bg-purple-700 text-purple-100 p-5 py-8 text-center font-medium text-xl">
                     <h2>PHONEVOX, CONECTANDO VOCÊ AO FUTURO DA COMUNICAÇÃO!</h2>
@@ -492,7 +492,7 @@ export default function Home() {
                                     <li>Trabalhe conosco</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="social-sharing">
                                 <h4 className="mb-2 font-medium">Redes sociais</h4>
                                 <ul className="flex gap-5 text-purple-200">
                                     <li>

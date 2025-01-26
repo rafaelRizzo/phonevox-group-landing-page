@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Phonevox - Soluções de Atendimento 24/7 para Empresas com VOIP e PABX",
+  title: "Phonevox - Callcenter 24/7 com VOIP e PABX para Empresas",
   description: "A Phonevox oferece soluções inovadoras de atendimento ao cliente para empresas de todos os portes. Aumente a produtividade com VOIP, PABX na nuvem, call center e suporte 24/7.",
   keywords: "atendimento ao cliente, soluções VOIP, PABX na nuvem, call center, suporte 24/7, empresas, sistema de atendimento empresarial, soluções de telecomunicação",
   author: "Phonevox Group",
@@ -23,7 +23,7 @@ export const metadata = {
   // Open Graph (OG) Meta Tags
   openGraph: {
     title: "Soluções de Atendimento 24/7 para Empresas com Phonevox",
-    description: "Transforme o atendimento da sua empresa com soluções personalizadas de VOIP, PABX na nuvem, e suporte 24/7. Saiba como aumentar a eficiência agora.",
+    description: "Soluções de atendimento empresarial com VOIP, PABX na nuvem e suporte 24/7 para sua empresa.",
     url: "https://www.phonevox.com.br/solucoes",
     type: "website", // Especifica o tipo de conteúdo
     siteName: "Phonevox - Atendimento Empresarial",
