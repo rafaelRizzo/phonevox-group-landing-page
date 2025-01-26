@@ -40,37 +40,40 @@ export default function Home() {
         <>
 
             {/* Navbar */}
-            <nav className="border-b border-purple-950/10">
+            <nav className="border-b border-purple-950/10" aria-label="Navegação principal">
                 <ul className="flex flex-col lg:flex-row items-center justify-between max-w-5xl px-5 py-3.5 mx-auto">
-                    <div>
-                        <li>
-                            <Link href="/">
-                                <Image src="/logo-phonevox.webp" alt="Logo da empresa" width={200} height={50} className="max-h-[42px]" loading="eager" />
-                            </Link>
-                        </li>
-                    </div>
+                    {/* Logo */}
+                    <li>
+                        <Link href="/" aria-label="Página inicial">
+                            <Image src="/logo-phonevox.webp" alt="Logo da empresa Phonevox" width={200} height={50} className="max-h-[42px]" loading="lazy" />
+                        </Link>
+                    </li>
 
-                    <div className="hidden lg:flex w-full flex-col justify-center lg:justify-end lg:flex-row items-center gap-5 text-muted-foreground text-sm">
-                        <li>
-                            <Link href="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Sobre</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Soluções</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Contato</Link>
-                        </li>
-                        <li>
-                            <Link href="https://central.phonevox.com.br/" target="_blank">
-                                <Button className="bg-primary-purple rounded-md">Área do cliente</Button>
-                            </Link>
-                        </li>
-                    </div>
+                    {/* Menu de navegação */}
+                    <li className="hidden lg:flex w-full flex-col justify-center lg:justify-end lg:flex-row items-center gap-5 text-muted-foreground text-sm">
+                        <ul className="flex items-center gap-5">
+                            <li>
+                                <Link href="/" aria-label="Ir para a página inicial">Home</Link>
+                            </li>
+                            <li>
+                                <Link href="/" aria-label="Informações sobre a empresa">Sobre</Link>
+                            </li>
+                            <li>
+                                <Link href="/" aria-label="Nossas soluções">Soluções</Link>
+                            </li>
+                            <li>
+                                <Link href="/" aria-label="Contato da empresa">Contato</Link>
+                            </li>
+                            <li>
+                                <Link href="https://central.phonevox.com.br/" target="_blank" aria-label="Área do cliente">
+                                    <Button className="bg-primary-purple rounded-md">Área do cliente</Button>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
+
 
             {/* Main section */}
             <main className="max-w-5xl p-5 my-5 mx-auto flex flex-col lg:flex-row items-center justify-between gap-x-8">
