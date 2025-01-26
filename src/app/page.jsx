@@ -136,16 +136,16 @@ export default function Home() {
 
             {/* Navbar */}
             <nav className="border-b border-purple-950/10">
-                <ul className="max-w-5xl px-5 py-3.5 mx-auto flex items-center justify-between">
+                <ul className="flex flex-col lg:flex-row items-center justify-between max-w-5xl px-5 py-3.5 mx-auto">
                     <div>
-                        <li className="hidden lg:block">
+                        <li>
                             <Link href="/">
                                 <Image src="/logo-phonevox.png" alt="Logo da empresa" width={200} height={50} className="max-h-[42px]" />
                             </Link>
                         </li>
                     </div>
 
-                    <div className="flex items-center gap-5 text-muted-foreground text-sm">
+                    <div className="hidden lg:flex w-full flex-col justify-center lg:justify-end lg:flex-row items-center gap-5 text-muted-foreground text-sm">
                         <li>
                             <Link href="/">Home</Link>
                         </li>
@@ -549,13 +549,13 @@ export default function Home() {
 
                 <div className="mx-auto max-w-5xl">
                     {/* Logo e texto descritivo */}
-                    <div className="flex flex-col items-center  lg:flex-row justify-between">
+                    <div className="flex flex-col items-center lg:flex-row justify-between">
                         <div className="flex flex-col max-w-xs gap-2">
                             <Image src="/logo-phonevox-white.png" alt="Logo da empresa" width={200} height={200} />
                             <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
                         </div>
 
-                        <div className="grid grid-cols-2 lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">
+                        <div className="grid grid-cols-1 place-content-center place-items-center text-center lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">
                             <div>
                                 <h4 className="mb-2 font-medium">Navegação</h4>
                                 <ul className="text-purple-200 space-y-2">
@@ -575,7 +575,7 @@ export default function Home() {
                                     <li>Trabalhe conosco</li>
                                 </ul>
                             </div>
-                            <div className="col-span-2 place-content-center place-items-center">
+                            <div>
                                 <h4 className="mb-2 font-medium">Redes sociais</h4>
                                 <ul className="flex gap-5 text-purple-200">
                                     <li><IoLogoInstagram /></li>
