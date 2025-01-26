@@ -171,7 +171,7 @@ export default function Home() {
                     <h1 className="text-4xl font-bold text-center lg:text-start">Seu cliente ainda está esperando enquanto você lê isso...</h1>
                     <h2 className="text-muted-foreground text-center lg:text-start">Nós podemos ajudar a resolver isso agora!</h2>
 
-                    <Link href="/" className="w-full my-4">
+                    <Link href="https://wa.me/551832568300" target="_blank" className="w-full my-4">
                         <Button className="max-w-full bg-primary-purple rounded-lg">Garanta um atendimento imediato ao seu cliente</Button>
                     </Link>
                 </div>
@@ -234,7 +234,7 @@ export default function Home() {
                                 <span className="text-md">Relatórios detalhados</span>
                             </li>
                         </ul>
-                        <Link href="/">
+                        <Link href="https://wa.me/551832568300" target="_blank">
                             <Button className="bg-primary-purple mt-4 w-full lg:w-auto">Tenho interesse!</Button>
                         </Link>
                     </div>
@@ -533,7 +533,7 @@ export default function Home() {
                             <p className="text-purple-100/95">Precisa de mais informações?</p>
                             <p className="text-sm text-purple-300/80 font-light">Entre em contato com um de nossos especialistas para tirar suas dúvidas.</p>
                         </div>
-                        <Link href="/">
+                        <Link href="https://wa.me/551832568300" target="_blank">
                             <Button className="bg-zinc-50 hover:bg-zinc-100 text-zinc-950">Entrar em contato</Button>
                         </Link>
                     </div>
