@@ -112,7 +112,17 @@ export default function Home() {
                 <aside className="flex flex-col items-center lg:flex-row gap-10">
 
                     <div className="flex-1 rounded-3xl overflow-hidden">
-                        <video src="/dashboard-video.mp4" loop autoPlay muted className="rounded-3xl min-h-[320px]"></video>
+                        <video
+                            className="aspect-auto object-cover rounded-3xl min-h-[320px]"
+                            loop
+                            autoPlay
+                            muted
+                            playsInline
+                            poster="/dashboard-poster.webp" // Adiciona a imagem do poster
+                        >
+                            <source src="/dashboard-video.mp4" type="video/mp4" />
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
 
                     <div className="flex-1 justify-center h-full">
