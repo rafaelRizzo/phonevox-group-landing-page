@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Phonevox - Callcenter 24/7 com VOIP e PABX para Empresas",
   description: "A Phonevox oferece soluções inovadoras de atendimento ao cliente para empresas de todos os portes. Aumente a produtividade com VOIP, PABX na nuvem, call center e suporte 24/7.",
-  keywords: "atendimento ao cliente, soluções VOIP, PABX na nuvem, call center, suporte 24/7, empresas, sistema de atendimento empresarial, soluções de telecomunicação",
+  keywords: "atendimento ao cliente, soluções VOIP, PABX na nuvem, call center, suporte 24/7, empresas, sistema de atendimento empresarial, soluções de telecomunicação, suporte issabel, suporte magnus, suporte asterisk, suporte freepbx",
   author: "Phonevox Group",
   robots: "index, follow",
   language: "pt-BR", // Indicando o idioma para o Google
