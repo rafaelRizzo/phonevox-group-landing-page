@@ -172,7 +172,7 @@ export default function Home() {
                     <h2 className="text-muted-foreground text-center lg:text-start">Nós podemos ajudar a resolver isso agora!</h2>
 
                     <Link href="https://wa.me/551832568300" target="_blank" className="w-full my-4">
-                        <Button className="max-w-full bg-primary-purple rounded-lg">Garanta um atendimento imediato ao seu cliente</Button>
+                        <Button className="w-full lg:max-w-full bg-primary-purple rounded-lg">Garanta um atendimento imediato ao seu cliente</Button>
                     </Link>
                 </div>
 
@@ -497,7 +497,7 @@ export default function Home() {
 
             <section className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col gap-10 border border-purple-700 rounded-3xl bg-purple-700 text-purple-100 p-5 py-8 text-center font-medium text-xl">
-                    <h2>PHONEVOX CONECTANDO VOCÊ AO FUTURO DA COMUNICAÇÃO</h2>
+                    <h2>PHONEVOX, CONECTANDO VOCÊ AO FUTURO DA COMUNICAÇÃO!</h2>
                 </div>
             </section>
 
@@ -542,12 +542,12 @@ export default function Home() {
             </section>
 
             {/* Em analise do que colocar aqui */}
-            <footer className="bg-purple-700">
+            <footer className="bg-purple-700 p-5 mt-10">
 
                 {/* Logo e texto descritivo */}
-                <div>
-                    <Image src="/logo-phonevox.png" alt="Logo da empresa" width={100} height={100} />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                <div className="flex flex-col max-w-xs gap-2">
+                    <Image src="/logo-phonevox-white.png" alt="Logo da empresa" width={200} height={200} />
+                    <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
                 </div>
 
                 {/* Midias sociais */}
