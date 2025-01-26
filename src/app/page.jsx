@@ -12,6 +12,7 @@ import Testemunhos from "@/components/appComponents/Testemunhos";
 import SloganSecundario from "@/components/appComponents/SloganSecundario";
 import Faq from "@/components/appComponents/Faq";
 import Rodape from "@/components/appComponents/Rodape";
+import Solucoes from "@/components/appComponents/Solucoes";
 
 export default function Home() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -34,6 +35,8 @@ export default function Home() {
             <PorQueAPhonevox />
 
             <SobreAPhonevox />
+
+            <Solucoes />
 
             <Parceiros logos={logos} />
 

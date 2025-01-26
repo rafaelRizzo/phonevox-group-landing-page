@@ -34,31 +34,39 @@ export default function Rodape() {
                                 <h4 className="mb-2 font-medium">Empresa</h4>
                                 <ul className="text-purple-200 space-y-2">
                                     <li>Av. José Bonifácio, 481-C, Centro, Santo Anastácio, SP, Brasil</li>
-                                    <li>contato@phonevox.com.br</li>
-                                    <li>18 3256 8300</li>
-                                    <li>Trabalhe conosco</li>
+                                    <li>
+                                        <Link href="mailto:contato@phonevox.com.br" target="_blank" className="hover:underline">
+                                            contato@phonevox.com.br
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://wa.me/551832568300" target="_blank" className="hover:underline">+55 18 3256-8300</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://wa.me/551832568300" target="_blank" className="hover:underline">Trabalhe conosco</Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="social-sharing">
                                 <h4 className="mb-2 font-medium">Redes sociais</h4>
                                 <ul className="flex gap-5 text-purple-200">
                                     <li>
-                                        <Link href="https://www.instagram.com/phonevox.group" target="_blank" aria-label="Instagram Phonevox Group">
+                                        <Link href="https://www.instagram.com/phonevox.group" target="_blank" aria-label="Instagram Phonevox Group" className="hover:underline">
                                             <IoLogoInstagram className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.linkedin.com/company/phonevox" target="_blank" aria-label="Linkedin Phonevox Group">
+                                        <Link href="https://www.linkedin.com/company/phonevox" target="_blank" aria-label="Linkedin Phonevox Group" className="hover:underline">
                                             <FaLinkedinIn className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.facebook.com/phonevoxcontactcenter" target="_blank" aria-label="Facebook Phonevox Group">
+                                        <Link href="https://www.facebook.com/phonevoxcontactcenter" target="_blank" aria-label="Facebook Phonevox Group" className="hover:underline">
                                             <IoLogoFacebook className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.tiktok.com/@phonevox" target="_blank" aria-label="Tiktok Phonevox Group">
+                                        <Link href="https://www.tiktok.com/@phonevox" target="_blank" aria-label="Tiktok Phonevox Group" className="hover:underline">
                                             <FaTiktok className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
