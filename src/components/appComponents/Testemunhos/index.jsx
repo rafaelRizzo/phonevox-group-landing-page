@@ -15,7 +15,7 @@ export default function Testemunhos({ testemunhos, activeIndex }) {
                 <div className="container-carrousel w-full flex items-center justify-center">
                     {testemunhos.map((testemunho, index) => (
                         <div key={testemunho.id}
-                            className={`carousel-card p-10 border rounded-3xl w-full lg:max-w-lg max-h-[400px]  min-h-[400px] shadow transition-opacity duration-700 ${index === activeIndex ? "active-testemunhal" : "opacity-0 absolute"}`}>
+                            className={`carousel-card p-10 border rounded-3xl w-full lg:max-w-lg shadow transition-opacity duration-700 ${index === activeIndex ? "active-testemunhal" : "opacity-0 absolute"}`}>
                             <blockquote className="carousel-content">
                                 {/* Card top */}
                                 <div className="carousel-navigation flex items-center justify-center gap-5 mb-5">
