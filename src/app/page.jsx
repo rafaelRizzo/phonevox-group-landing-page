@@ -475,7 +475,7 @@ export default function Home() {
                                         <Image
                                             src="/quotes-icon.svg"
                                             alt="Ícone de aspas para os testemunhos"
-                                            className="w-[150px] h-[150px] -z-10 opacity-50"
+                                            className="w-[150px] h-[150px] -z-10 opacity-20"
                                             width={200}
                                             height={200}
                                         />
