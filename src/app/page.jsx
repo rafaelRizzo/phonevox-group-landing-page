@@ -19,7 +19,10 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import { v4 as uuidv4 } from 'uuid';
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoLogoFacebook } from "react-icons/io5";
+import { FaTiktok } from "react-icons/fa6";
 
 export default function Home() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -135,7 +138,7 @@ export default function Home() {
             <nav className="border-b border-purple-950/10">
                 <ul className="max-w-5xl px-5 py-3.5 mx-auto flex items-center justify-between">
                     <div>
-                        <li>
+                        <li className="hidden lg:block">
                             <Link href="/">
                                 <Image src="/logo-phonevox.png" alt="Logo da empresa" width={200} height={50} className="max-h-[42px]" />
                             </Link>
@@ -528,8 +531,8 @@ export default function Home() {
             <section className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col border border-purple-700 rounded-3xl bg-purple-700 text-zinc-50 p-5 py-8 font-medium text-xl">
 
-                    <div className="flex items-center justify-between">
-                        <div className="flex flex-col justify-center ">
+                    <div className="flex flex-col lg:flex-row items-center justify-between">
+                        <div className="flex flex-col justify-center mb-5 lg:mb-0 ">
                             <p className="text-purple-100/95">Precisa de mais informações?</p>
                             <p className="text-sm text-purple-300/80 font-light">Entre em contato com um de nossos especialistas para tirar suas dúvidas.</p>
                         </div>
@@ -542,18 +545,57 @@ export default function Home() {
             </section>
 
             {/* Em analise do que colocar aqui */}
-            <footer className="bg-purple-700 p-5 mt-10">
+            <footer className="bg-purple-700 p-5 py-8  mt-10 text-sm">
 
-                {/* Logo e texto descritivo */}
-                <div className="flex flex-col max-w-xs gap-2">
-                    <Image src="/logo-phonevox-white.png" alt="Logo da empresa" width={200} height={200} />
-                    <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
+                <div className="mx-auto max-w-5xl">
+                    {/* Logo e texto descritivo */}
+                    <div className="flex flex-col items-center  lg:flex-row justify-between">
+                        <div className="flex flex-col max-w-xs gap-2">
+                            <Image src="/logo-phonevox-white.png" alt="Logo da empresa" width={200} height={200} />
+                            <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
+                        </div>
+
+                        <div className="grid grid-cols-2 lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">
+                            <div>
+                                <h4 className="mb-2 font-medium">Navegação</h4>
+                                <ul className="text-purple-200 space-y-2">
+                                    <li>Home</li>
+                                    <li>Sobre</li>
+                                    <li>Soluções</li>
+                                    <li>Contato</li>
+                                    <li>Área do cliente</li>
+                                </ul>
+                            </div>
+                            <div className="max-w-[200px]">
+                                <h4 className="mb-2 font-medium">Empresa</h4>
+                                <ul className="text-purple-200 space-y-2">
+                                    <li>Av. José Bonifácio, 481-C, Centro, Santo Anastácio, SP, Brasil</li>
+                                    <li>contato@phonevox.com.br</li>
+                                    <li>18 3256 8300</li>
+                                    <li>Trabalhe conosco</li>
+                                </ul>
+                            </div>
+                            <div className="col-span-2 place-content-center place-items-center">
+                                <h4 className="mb-2 font-medium">Redes sociais</h4>
+                                <ul className="flex gap-5 text-purple-200">
+                                    <li><IoLogoInstagram /></li>
+                                    <li><FaLinkedinIn /></li>
+                                    <li><IoLogoFacebook /></li>
+                                    <li><FaTiktok /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="my-10 border-t border-purple-50/50"></div>
+
+                    <div className="flex flex-col items-center justify-center text-purple-300 text-xs" >
+                        <span>Feito por <Link href={"https://www.linkedin.com/in/rafael-rizzo-breschi-b02547216"} target="_blank" className="hover:underline">Rafael Rizzo Breschi</Link></span>
+                        <span>&copy; 2025 Phonevox Group. Todos os direitos reservados</span>
+                    </div>
+
                 </div>
 
-                {/* Midias sociais */}
-                <div>
-
-                </div>
             </footer>
 
         </>
