@@ -1,4 +1,6 @@
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
 export default function Solucoes() {
