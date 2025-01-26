@@ -362,7 +362,7 @@ export default function Home() {
                                         <div className="p-1">
                                             <Card className="shadow-none border-none ">
                                                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                                                    <Image src={logo} alt={logo} width={200} height={200} className="brightness-0 recolor-logos " loading="lazy" />
+                                                    <Image src={logo} alt={logo} width={200} height={200} className="brightness-0 recolor-logos" loading="lazy" />
                                                 </CardContent>
                                             </Card>
                                         </div>
@@ -402,6 +402,7 @@ export default function Home() {
                                                 className="w-full h-full object-cover"
                                                 width={200}
                                                 height={200}
+                                                loading="lazy"
                                             />
                                         </div>
                                     </div>
@@ -416,6 +417,7 @@ export default function Home() {
                                             className="w-[150px] h-[150px] -z-10 opacity-20"
                                             width={200}
                                             height={200}
+                                            loading="lazy"
                                         />
                                     </div>
                                     <div className="card-text-testemunho text-3xl font-serif break-words break-normal overflow-hidden text-purple-950">

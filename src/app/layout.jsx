@@ -16,13 +16,12 @@ export const metadata = {
   robots: "index, follow",
   language: "pt-BR", // Indicando o idioma para o Google
 
-  // Open Graph (OG) Meta Tags
   openGraph: {
     title: "Soluções de Atendimento 24/7 para Empresas com Phonevox",
     description: "Soluções de atendimento empresarial com VOIP, PABX na nuvem e suporte 24/7 para sua empresa.",
-    url: "https://www.phonevox.com.br/solucoes",
-    type: "website", // Especifica o tipo de conteúdo
-    siteName: "Phonevox - Atendimento Empresarial",
+    url: "https://www.phonevox.com.br/",
+    type: "website",
+    siteName: "Phonevox - Atendimento para Callcenter e Suporte VOIP",
   },
 
   // Favicon and Icons
