@@ -85,7 +85,17 @@ export default function Home() {
                 </div>
 
                 <div className="flex-1 w-full rounded-3xl overflow-hidden">
-                    <video src="/video.mp4" className="aspect-auto object-cover min-h-[320px] lg:min-h-[450px] rounded-3xl" loop autoPlay muted></video>
+                    <video
+                        className="aspect-auto object-cover min-h-[320px] lg:min-h-[450px] rounded-3xl"
+                        loop
+                        autoPlay
+                        muted
+                        playsInline
+                        poster="/poster-video.png" // Adiciona a imagem do poster
+                    >
+                        <source src="/video.mp4" type="video/mp4" />
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
                 </div>
             </main>
 
@@ -107,39 +117,39 @@ export default function Home() {
                         <ul className="grid grid-cols-2 sm:grid-cols-3 lg:flex gap-2.5  flex-col">
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Atendimento rápido</span>
+                                <p className="text-md">Atendimento rápido</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Empatia e agilidade</span>
+                                <p className="text-md">Empatia e agilidade</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Atendimento especializado</span>
+                                <p className="text-md">Atendimento especializado</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Experiência técnica</span>
+                                <p className="text-md">Experiência técnica</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Treinamentos constantes</span>
+                                <p className="text-md">Treinamentos constantes</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Registro no seu ERP</span>
+                                <p className="text-md">Registro no seu ERP</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Dashboard em tempo real</span>
+                                <p className="text-md">Dashboard em tempo real</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Atendimeneto customizado</span>
+                                <p className="text-md">Atendimeneto customizado</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                <span className="text-md">Relatórios detalhados</span>
+                                <p className="text-md">Relatórios detalhados</p>
                             </li>
                         </ul>
                         <Link href="https://wa.me/551832568300" target="_blank">
@@ -207,39 +217,39 @@ export default function Home() {
                             <ul className="flex flex-col gap-2.5 mt-5">
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Atendimento 24/7</span>
+                                    <p className="text-md">Atendimento 24/7</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Distribuição automática de chamadas</span>
+                                    <p className="text-md">Distribuição automática de chamadas</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Ligações gravadas para registro</span>
+                                    <p className="text-md">Ligações gravadas para registro</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Relatórios detalhados mensais</span>
+                                    <p className="text-md">Relatórios detalhados mensais</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Treinamentos constantes</span>
+                                    <p className="text-md">Treinamentos constantes</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Registro no seu ERP</span>
+                                    <p className="text-md">Registro no seu ERP</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Dashboard em tempo real</span>
+                                    <p className="text-md">Dashboard em tempo real</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Desbloqueio de clientes</span>
+                                    <p className="text-md">Desbloqueio de clientes</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Atendimento via CHAT e TELEFONE</span>
+                                    <p className="text-md">Atendimento via CHAT e TELEFONE</p>
                                 </li>
                             </ul>
 
@@ -262,39 +272,39 @@ export default function Home() {
                             <ul className="flex flex-col gap-2.5 mt-5">
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">PABX em nuvem</span>
+                                    <p className="text-md">PABX em nuvem</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Consultoria</span>
+                                    <p className="text-md">Consultoria</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Planos com minutos ilimitados</span>
+                                    <p className="text-md">Planos com minutos ilimitados</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">0800 ilimitado</span>
+                                    <p className="text-md">0800 ilimitado</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Integração com tecnologias modernas</span>
+                                    <p className="text-md">Integração com tecnologias modernas</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Flexibilidade geográfica</span>
+                                    <p className="text-md">Flexibilidade geográfica</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Redução de problemas como interferências de sinal</span>
+                                    <p className="text-md">Redução de problemas como interferências de sinal</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Vários canais de saídas e entradas simultâneos</span>
+                                    <p className="text-md">Vários canais de saídas e entradas simultâneos</p>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <FaCheck className="text-purple-600 min-h-4 min-w-4" />
-                                    <span className="text-md">Melhor qualidade de áudio e som</span>
+                                    <p className="text-md">Melhor qualidade de áudio e som</p>
                                 </li>
                             </ul>
 
@@ -368,7 +378,7 @@ export default function Home() {
                             className={`carousel-card p-10 border rounded-3xl w-full lg:max-w-lg shadow transition-opacity duration-700 ${index === activeIndex ? "active-testemunhal" : "opacity-0 absolute"
                                 }`}
                         >
-                            <div className="carousel-content">
+                            <blockquote className="carousel-content">
                                 {/* Card top */}
                                 <div className="carousel-navigation flex items-center justify-center gap-5 mb-5">
                                     <div className="caroulse-photo-cliente">
@@ -402,12 +412,12 @@ export default function Home() {
 
                                 {/* Card footer */}
                                 <div className="carousel-footer flex flex-col items-center justify-center gap-1 mt-5">
-                                    <span className="carousel-client-name text-sm text-purple-800">{testemunho.nome}</span>
+                                    <cite className="carousel-client-name text-sm text-purple-800">{testemunho.nome}</cite>
                                     <span className="carousel-client-position text-purple-950/50 text-xs">
                                         {testemunho.empresa}
                                     </span>
                                 </div>
-                            </div>
+                            </blockquote>
                         </div>
                     ))}
                 </div>
@@ -511,7 +521,7 @@ export default function Home() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href=" https://www.tiktok.com/@phonevox" target="_blank" >
+                                        <Link href="https://www.tiktok.com/@phonevox" target="_blank" >
                                             <FaTiktok className="hover:scale-105 transition-all" />
                                         </Link>
                                     </li>
@@ -523,8 +533,8 @@ export default function Home() {
                     <div className="my-10 border-t border-purple-50/50"></div>
 
                     <div className="flex flex-col items-center justify-center text-purple-300 text-xs" >
-                        <span>Feito por <Link href={"https://www.linkedin.com/in/rafael-rizzo-breschi-b02547216"} target="_blank" className="hover:underline">Rafael Rizzo Breschi</Link></span>
-                        <span>&copy; 2025 Phonevox Group. Todos os direitos reservados</span>
+                        <p>Feito por <Link href={"https://www.linkedin.com/in/rafael-rizzo-breschi-b02547216"} target="_blank" className="hover:underline">Rafael Rizzo Breschi</Link></p>
+                        <p>&copy; 2025 Phonevox Group. Todos os direitos reservados</p>
                     </div>
 
                 </div>
