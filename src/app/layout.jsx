@@ -27,10 +27,10 @@ export const metadata = {
 
   // Favicon and Icons
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
-    android: "/favicon.ico",
-    other: "/favicon.ico", // Ícone para dispositivos maiores
+    icon: "/favicon/favicon.ico",
+    apple: "/favicon/apple-touch-icon.png",
+    android: "/favicon/favicon.ico",
+    other: "/favicon/favicon.ico", // Ícone para dispositivos maiores
   },
 
   // Dados Estruturados (Schema Markup - JSON-LD)
