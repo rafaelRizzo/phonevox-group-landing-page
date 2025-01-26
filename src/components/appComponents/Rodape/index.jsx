@@ -21,13 +21,23 @@ export default function Rodape() {
 
                         <div className="grid grid-cols-1 place-content-center place-items-center lg:place-items-start lg:place-content-start text-center lg:text-start lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">
                             <div>
-                                <h4 className="mb-2 font-medium">Navegação</h4>
+                                <h4 className="mb-2 font-medium">Paginas</h4>
                                 <ul className="text-purple-200 space-y-2">
-                                    <li>Home</li>
-                                    <li>Sobre</li>
-                                    <li>Soluções</li>
-                                    <li>Contato</li>
-                                    <li>Área do cliente</li>
+                                    <li>
+                                        <Link href="/">Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/sobre">Sobre</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/solucoes">Soluções</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/contato">Contato</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://central.phonevox.com.br/" target="_blank" aria-label="Área do cliente">Área do cliente</Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="max-w-[200px]">

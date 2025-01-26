@@ -5,7 +5,7 @@ export default function Ajuda() {
     return (
         <>
             {/* Section de contato/ ajuda */}
-            <section className="max-w-5xl p-5 my-5 mx-auto">
+            <section id="contato" className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col border border-purple-700 rounded-3xl bg-purple-700 text-zinc-50 p-5 py-8 font-medium text-xl">
 
                     <div className="flex flex-col lg:flex-row items-center justify-between text-center lg:text-start">

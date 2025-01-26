@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", serif;
 }
@@ -116,4 +120,17 @@ body {
 
 .recolor-logos {
   filter: brightness(0) saturate(100%) invert(18%) sepia(60%) saturate(5070%) hue-rotate(268deg) brightness(86%) contrast(98%);
+}
+
+.open-menu {
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  border-bottom: 1px solid transparent
+}
+
+.open-menu.open {
+  max-height: 500px;
+  border-bottom: 1px solid rgb(59 7 100 / 0.1);
 }

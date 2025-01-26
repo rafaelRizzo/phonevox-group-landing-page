@@ -6,7 +6,7 @@ export default function PorQueAPhonevox() {
     return (
         <>
             {/* Por que usar o nosso atendimento */}
-            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
+            <section id="sobre" className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Por que usar nosso atendimento?</h2>
                     <h3 className="text-muted-foreground text-sm">Oferecemos soluções de atendimento ao cliente rápidas e eficientes para melhorar a experiência dos seus consumidores, com tecnologia de ponta e equipe altamente qualificada.</h3>

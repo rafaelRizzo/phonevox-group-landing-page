@@ -7,7 +7,7 @@ export default function Solucoes() {
     return (
         <>
             {/* Soluções */}
-            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
+            <section id="solucoes" className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Nossas soluções</h2>
                     <h3 className="text-muted-foreground text-sm">Oferecemos soluções de atendimento personalizadas para empresas de todos os tamanhos, com especialização em VOIP e PABX na nuvem!</h3>
