@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "question": "Tem alguma fidelidade?",
+        "answer": "Não! todos os nossos planos não possuem fidelidade."
+    },
+    {
+        "id": 2,
+        "question": "Teste gratuito de atendimento",
+        "answer": "Você pode entrar em contato e agendar um horário conosco para fazer um teste sem compromisso."
+    },
+    {
+        "id": 3,
+        "question": "E se eu não estiver satisfeito com o serviço?",
+        "answer": "Não se preocupe, iremos fazer o que estiver em nosso alcance para sempre melhorar, mas caso aconteça, todos os nossos planos possuem uma garantia de 30 dias para pedir o seu dinheiro de volta."
+    },
+    {
+        "id": 4,
+        "question": "Preciso falar sobre meu plano",
+        "answer": "Claro! estamos a disposição para atender a todas as suas necessidades, basta entrar em contato conosco pelo número: 18 3256 8300, telefone ou whatsapp!"
+    }
+]

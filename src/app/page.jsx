@@ -4,8 +4,7 @@ import { Card, CardTitle, CardContent, CardDescription } from "@/components/ui/c
 import Image from "next/image";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
-import * as React from "react"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
     Carousel,
     CarouselContent,
@@ -23,130 +22,13 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaTiktok } from "react-icons/fa6";
+import { useAppContext } from "@/context/AppContext";
 
 export default function Home() {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [logos, setLogos] = useState([]);
+    const { logos, testemunhos, perguntasFaq } = useAppContext();
 
-    React.useEffect(() => {
-        const fetchLogos = async () => {
-            try {
-                // Carrega o arquivo logos.json
-                const response = await fetch("/logos.json");
-                if (!response.ok) {
-                    throw new Error("Erro ao carregar logos.json");
-                }
-
-                const data = await response.json();
-                // Monta os caminhos completos das imagens
-                const logoPaths = data.map((name) => `/logos/${name}`);
-                console.log(logoPaths)
-                setLogos(logoPaths);
-            } catch (error) {
-                console.error("Erro ao buscar as logos:", error);
-            }
-        };
-
-        fetchLogos();
-    }, []);
-
-    const testemunhos = [
-        {
-            id: 1,
-            nome: "Aléxia Luíza",
-            empresa: "MJC TELECOM",
-            texto: "Excelente todos os atendentes. Sempre procurando ajudar e fazer o melhor para seus clientes.",
-            foto: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 2,
-            nome: "João Pereira",
-            empresa: "Tech Solutions",
-            texto: "Ótimo suporte técnico, sempre rápidos e eficientes. Recomendo fortemente!",
-            foto: "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 3,
-            nome: "Mariana Silva",
-            empresa: "Global Corp",
-            texto: "Serviço impecável, desde o atendimento até a entrega final. Estou impressionada!",
-            foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 4,
-            nome: "Carolina Nogueira",
-            empresa: "Soft Solutions",
-            texto: "Um atendimento impecável e soluções rápidas! Certamente, voltarei a contratar seus serviços.",
-            foto: "https://images.unsplash.com/photo-1524503033411-c9566986fc8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 5,
-            nome: "Pedro Almeida",
-            empresa: "Almeida & Co.",
-            texto: "Não posso recomendar o suficiente! A equipe foi atenciosa e entregou tudo como prometido.",
-            foto: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 6,
-            nome: "Fernanda Costa",
-            empresa: "Costa Studio",
-            texto: "A experiência foi incrível! Cada detalhe foi pensado para garantir a satisfação do cliente.",
-            foto: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 7,
-            nome: "Gabriel Fernandes",
-            empresa: "Inova Tech",
-            texto: "Profissionalismo e eficiência definem o trabalho dessa equipe. Fiquei muito satisfeito com os resultados.",
-            foto: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 8,
-            nome: "Isabela Rocha",
-            empresa: "Design Pro",
-            texto: "Adorei o atendimento e a dedicação para atender minhas necessidades. Trabalho de alta qualidade!",
-            foto: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 9,
-            nome: "Laura Mendes",
-            empresa: "Bright Future Co.",
-            texto: "Foi uma experiência incrível trabalhar com eles. Altamente recomendados para qualquer projeto!",
-            foto: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-            id: 10,
-            nome: "Ricardo Lopes",
-            empresa: "Visionary Inc.",
-            texto: "A atenção aos detalhes e o compromisso com a qualidade realmente me impressionaram.",
-            foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-    ];
-
-    const perguntasFaq = [
-        {
-            id: 1,
-            question: "Tem alguma fidelidade?",
-            answer: "Não! todos os nossos planos não possuem fidelidade."
-        },
-        {
-            id: 2,
-            question: "Teste gratuito de atendimento",
-            answer: "Você pode entrar em contato e agendar um horário conosco para fazer um teste sem compromisso."
-        },
-        {
-            id: 3,
-            question: "E se eu não estiver satisfeito com o serviço?",
-            answer: "Não se preocupe, iremos fazer o que estiver em nosso alcance para sempre melhorar, mas caso aconteça, todos os nossos planos possuem uma garantia de 30 dias para pedir o seu dinheiro de volta."
-        },
-        {
-            id: 4,
-            question: "Preciso falar sobre meu plano",
-            answer: "Claro! estamos a disposição para atender a todas as suas necessidades, basta entrar em contato conosco pelo número: 18 3256 8300, telefone ou whatsapp!"
-        }
-    ]
-
-    React.useEffect(() => {
+    useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % testemunhos.length);
         }, 6000); // Muda o depoimento a cada 6 segundos
@@ -361,9 +243,11 @@ export default function Home() {
                                 </li>
                             </ul>
 
-                            <Button className="bg-primary-purple w-full mt-5">
-                                <Link href="https://wa.me/551832568300" target="_blank">Saiba mais</Link>
-                            </Button>
+                            <Link href="https://wa.me/551832568300" target="_blank">
+                                <Button className="bg-primary-purple w-full mt-5">
+                                    Saiba mais
+                                </Button>
+                            </Link>
                         </CardContent>
                     </Card>
 
@@ -414,17 +298,19 @@ export default function Home() {
                                 </li>
                             </ul>
 
-                            <Button className="bg-primary-purple w-full mt-5">
-                                <Link href="https://wa.me/551832568300" target="_blank">Saiba mais</Link>
-                            </Button>
+                            <Link href="https://wa.me/551832568300" target="_blank">
+                                <Button className="bg-primary-purple w-full mt-5">
+                                    Saiba mais
+                                </Button>
+                            </Link>
                         </CardContent>
                     </Card>
                 </div>
 
-            </section>
+            </section >
 
             {/* Parceiros */}
-            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
+            < section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10" >
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Nossos parceiros</h2>
                     <h3 className="text-muted-foreground text-sm">Empresas que confiam em nosso potencial de potencializar seu atendimento</h3>
@@ -464,10 +350,10 @@ export default function Home() {
                     </Carousel>
                 </div>
 
-            </section>
+            </section >
 
-            {/* Testemunhos */}
-            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
+            {/* Testemunhos clientes */}
+            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10" >
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Relatos de nossos clientes</h2>
                     <h3 className="text-muted-foreground text-sm">
@@ -525,8 +411,9 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section >
 
+            {/*  */}
             <section className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col gap-10 border border-purple-700 rounded-3xl bg-purple-700 text-purple-100 p-5 py-8 text-center font-medium text-xl">
                     <h2>PHONEVOX, CONECTANDO VOCÊ AO FUTURO DA COMUNICAÇÃO!</h2>
@@ -557,6 +444,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Ajuda */}
             <section className="max-w-5xl p-5 my-5 mx-auto">
                 <div className="flex flex-col border border-purple-700 rounded-3xl bg-purple-700 text-zinc-50 p-5 py-8 font-medium text-xl">
 
@@ -573,7 +461,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Em analise do que colocar aqui */}
+            {/* Rodapé */}
             <footer className="bg-purple-700 p-5 py-8  mt-10 text-sm">
 
                 <div className="mx-auto max-w-5xl">
@@ -607,10 +495,26 @@ export default function Home() {
                             <div>
                                 <h4 className="mb-2 font-medium">Redes sociais</h4>
                                 <ul className="flex gap-5 text-purple-200">
-                                    <li><IoLogoInstagram /></li>
-                                    <li><FaLinkedinIn /></li>
-                                    <li><IoLogoFacebook /></li>
-                                    <li><FaTiktok /></li>
+                                    <li>
+                                        <Link href="https://www.instagram.com/phonevox.group" target="_blank" >
+                                            <IoLogoInstagram className="hover:scale-105 transition-all" />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.linkedin.com/company/phonevox" target="_blank" >
+                                            <FaLinkedinIn className="hover:scale-105 transition-all" />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.facebook.com/phonevoxcontactcenter" target="_blank" >
+                                            <IoLogoFacebook className="hover:scale-105 transition-all" />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href=" https://www.tiktok.com/@phonevox" target="_blank" >
+                                            <FaTiktok className="hover:scale-105 transition-all" />
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
