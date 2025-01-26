@@ -175,7 +175,7 @@ export default function Home() {
                     <h2 className="text-muted-foreground text-center lg:text-start">Nós podemos ajudar a resolver isso agora!</h2>
 
                     <Link href="https://wa.me/551832568300" target="_blank" className="w-full my-4">
-                        <Button className="w-full lg:max-w-full bg-primary-purple rounded-lg">Garanta um atendimento imediato ao seu cliente</Button>
+                        <Button className="w-full lg:max-w-fit bg-primary-purple rounded-lg">Garanta um atendimento imediato ao seu cliente</Button>
                     </Link>
                 </div>
 
