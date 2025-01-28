@@ -28,8 +28,7 @@ export default function Home() {
     }, [testemunhos.length]);
 
     useEffect(() => {
-
-        (function (i, s, g, r, j, y, b, p, t, z, a) { a = s.createElement(r), a.async = 1, a.src = g.concat(b, j, b, y, p, j), s.head.appendChild(a), a.onload = function () { opa.init(g, t, z) } })(window, document, 'https://opa.phonevox.com.br', 'script', 'js', 'opa', '/', '.', process.env.NEXT_PUBLIC_GOOGLE_CREDENTIAL, '{"google_credential":"","google_oauth":"","facebook_appid":"","permitir_login_anonimo":"on"}');
+        (function (i, s, g, r, j, y, b, p, t, z, a) { a = s.createElement(r), a.async = 1, a.src = g.concat(b, j, b, y, p, j), s.head.appendChild(a), a.onload = function () { opa.init(g, t, z) } })(window, document, 'https://opa.phonevox.com.br', 'script', 'js', 'opa', '/', '.', '67991bccfec2f0dbc73601e5', '{"google_credential":"","google_oauth":"","facebook_appid":"","permitir_login_anonimo":"on"}');
     }, []);
 
     return (
