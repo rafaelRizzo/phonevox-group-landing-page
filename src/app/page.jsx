@@ -28,32 +28,8 @@ export default function Home() {
     }, [testemunhos.length]);
 
     useEffect(() => {
-        const jsonConfig = JSON.stringify({
-            google_credential: process.env.NEXT_PUBLIC_GOOGLE_CREDENTIAL,
-            google_oauth: process.env.NEXT_PUBLIC_GOOGLE_OAUTH,
-            facebook_appid: process.env.NEXT_PUBLIC_FACEBOOK_APPID,
-            permitir_login_anonimo: process.env.NEXT_PUBLIC_PERMITIR_LOGIN_ANONIMO,
-        });
 
-        (function (i, s, g, r, j, y, b, p, t, z, a) {
-            // Cria um elemento <script>
-            a = s.createElement(r);
-            a.async = true; // Define que o script será carregado de forma assíncrona
-            a.src = g.concat(b, j, b, y, p, j); // Monta a URL do script a ser carregado
-
-            // Adiciona o <script> no <head> do documento
-            s.body.appendChild(a);
-
-            // Callback executado quando o script é carregado
-            a.onload = function () {
-                if (typeof opa !== "undefined" && opa.init) {
-                    // Inicializa a função 'opa.init' com os parâmetros necessários
-                    opa.init(g, t, z);
-                } else {
-                    console.error("opa.init não está disponível");
-                }
-            };
-        })(window, document, "https://opa.phonevox.com.br", "script", "js", "opa", "/", ".", process.env.NEXT_PUBLIC_API_KEY, jsonConfig);
+        (function (i, s, g, r, j, y, b, p, t, z, a) { a = s.createElement(r), a.async = 1, a.src = g.concat(b, j, b, y, p, j), s.head.appendChild(a), a.onload = function () { opa.init(g, t, z) } })(window, document, 'https://opa.phonevox.com.br', 'script', 'js', 'opa', '/', '.', process.env.NEXT_PUBLIC_GOOGLE_CREDENTIAL, '{"google_credential":"","google_oauth":"","facebook_appid":"","permitir_login_anonimo":"on"}');
     }, []);
 
     return (
