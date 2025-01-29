@@ -18,7 +18,7 @@ export default function Main() {
 
                 <div className="flex-1 w-full rounded-3xl overflow-hidden mt-4 lg:mt-0">
                     <video
-                        className="aspect-auto object-cover min-h-[320px] lg:min-h-[450px] rounded-3xl"
+                        className="aspect-auto object-cover w-full min-h-[320px] lg:min-h-[450px] rounded-3xl"
                         loop
                         autoPlay
                         muted

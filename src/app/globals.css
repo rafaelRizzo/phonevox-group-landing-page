@@ -134,3 +134,80 @@ body {
   max-height: 500px;
   border-bottom: 1px solid rgb(59 7 100 / 0.1);
 }
+
+div.opa_ico {
+  width: 50px;
+  height: 50px;
+  background-color: #8609cb;
+}
+
+div.opa_chat {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+  background-color: transparent;
+}
+
+div.opa_cabecalho {
+  background-color: #7e22ce;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+div.opa_corpo {
+  background-color: #fff;
+}
+
+div.opa_rodape {
+  background-color: #FFF;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* Esconde o texto original horrivel do opa*/
+.div-logins a.sem-login {
+  color: transparent;
+  position: relative;
+}
+
+.div-logins a.sem-login::before {
+  content: "Falar com um especialista";
+  background-color: #7708b3;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  border-radius: .375rem;
+  font-size: .9rem;
+}
+
+
+div.opa_ballon.enviada div.time {
+  color: #E4E4E4;
+}
+
+div.opa_ballon.enviada {
+  background: #7e22ce;
+  color: #FFF;
+}
+
+div.opa_ballon.enviada::after {
+  background: #fff;
+}
+
+div.opa_ballon.enviada::before {
+  border-right: 20px solid #7e22ce;
+}
+
+div.opa_ballon.recebida {
+  background: #8609cb26;
+}
+
+div.opa_ballon.recebida::after {
+  background: #fff;
+}
+
+div.opa_ballon.recebida::before {
+  border-left: 20px solid #EDDAF7;
+}
