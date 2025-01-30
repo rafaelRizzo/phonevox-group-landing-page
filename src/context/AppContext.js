@@ -28,7 +28,7 @@ export const AppProvider = ({ children }) => {
     // Função para salvar no cookie
     const saveToCookie = (key, data) => {
         const timestamp = Date.now();
-        cookies.set(key, { data, timestamp }, { path: "/", expires: new Date(timestamp + 24 * 60 * 60 * 1000) }); // Expira em 24 horas
+        cookies.set(key, { data, timestamp }, { path: "/", expires: new Date(timestamp + 2 * 60 * 60 * 1000) }); // Expira em 2 horas
     };
 
     useEffect(() => {

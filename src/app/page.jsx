@@ -1,9 +1,10 @@
 "use client"
 
+import LayoutLanding from "@/LayoutLanding";
+
 import { useAppContext } from "@/context/AppContext";
 import { useEffect, useState } from "react";
 
-import Navbar from "@/components/appComponents/Navbar";
 import Main from "@/components/appComponents/Main";
 import PorQueAPhonevox from "@/components/appComponents/PorQueAPhonevox";
 import SobreAPhonevox from "@/components/appComponents/SobreAPhonevox";
@@ -11,7 +12,6 @@ import Parceiros from "@/components/appComponents/Parceiros";
 import Testemunhos from "@/components/appComponents/Testemunhos";
 import SloganSecundario from "@/components/appComponents/SloganSecundario";
 import Faq from "@/components/appComponents/Faq";
-import Rodape from "@/components/appComponents/Rodape";
 import Solucoes from "@/components/appComponents/Solucoes";
 import Ajuda from "@/components/appComponents/Ajuda";
 
@@ -32,10 +32,7 @@ export default function Home() {
     }, []);
 
     return (
-        <>
-
-            <Navbar />
-
+        <LayoutLanding>
             <Main />
 
             <PorQueAPhonevox />
@@ -53,8 +50,6 @@ export default function Home() {
             <Faq perguntasFaq={perguntasFaq} />
 
             <Ajuda />
-
-            <Rodape />
-        </>
+        </LayoutLanding>
     );
 }
