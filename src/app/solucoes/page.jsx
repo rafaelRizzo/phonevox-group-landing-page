@@ -24,7 +24,7 @@ export default function Solucoes() {
                             </p>
 
                         </div>
-                        <Image src="/images/call-center.webp" alt="callcenter" width={1920} height={1080} className="h-full w-full object-cover rounded-3xl" />
+                        <Image src="/images/callcenter.webp" alt="callcenter" width={1920} height={1080} className="h-full w-full object-cover rounded-3xl" />
                     </aside>
 
                 </div>

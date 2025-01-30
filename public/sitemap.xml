@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Sitemap para Phonevox -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.phonevox.com.br/</loc>
-        <lastmod>2025-01-29</lastmod> <!-- Data de última modificação -->
+        <lastmod>2025-01-29</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
@@ -21,4 +20,4 @@
         <lastmod>2025-01-29</lastmod>
         <priority>0.8</priority>
     </url>
-</sitemapindex>
+</urlset>
