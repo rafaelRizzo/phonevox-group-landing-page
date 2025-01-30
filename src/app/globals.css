@@ -139,6 +139,7 @@ div.opa_ico {
   width: 50px;
   height: 50px;
   background-color: #8609cb;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, .05));
 }
 
 div.opa_chat {

@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="hidden lg:block border-b border-purple-950/10 " aria-label="Navegação principal">
+            <nav className="hidden lg:block border-b border-purple-950/10 " aria-label="breadcrumb">
                 <ul className="flex flex-col lg:flex-row items-center justify-between max-w-5xl px-5 py-3.5 mx-auto">
                     {/* Logo */}
                     <li>
@@ -25,7 +25,7 @@ export default function Navbar() {
                     <li className="hidden lg:flex w-full flex-col justify-center lg:justify-end lg:flex-row items-center gap-5 text-muted-foreground text-sm">
                         <ul className="flex items-center gap-5">
                             <li>
-                                <Link href="#home" aria-label="Ir para a página inicial">Home</Link>
+                                <Link href="/" aria-label="Ir para a página inicial">Home</Link>
                             </li>
                             <li>
                                 <Link href="#sobre" aria-label="Informações sobre a empresa">Sobre</Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
             </nav>
 
             {/* NAVBAR MOBILE */}
-            <nav className="block lg:hidden border-b border-purple-950/10 " aria-label="Navegação principal">
+            <nav className="block lg:hidden border-b border-purple-950/10 " aria-label="breadcrumb">
                 <ul className="flex items-center justify-between max-w-5xl px-5 py-3.5 mx-auto min-h-[70px] max-h-[70px] relative">
                     {/* Logo */}
                     <li>
@@ -58,7 +58,7 @@ export default function Navbar() {
 
                     {/* Menu de navegação */}
                     <div>
-                        <Button className={`bg-primary-purple`} onClick={() => { setOpenNav(!openNav) }}>
+                        <Button className={`bg-primary-purple`} onClick={() => { setOpenNav(!openNav) }} aria-label="Menu hamburguer">
                             <RxHamburgerMenu />
                         </Button>
                     </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
                     <li className={`${openNav ? 'open-menu open' : 'open-menu'} overflow-hidden w-full flex-col gap-5 text-purple-950 text-sm absolute mt-[71px] top-0 left-0 right-0 bg-zinc-50 z-50`}>
                         <ul className="flex flex-col py-6 px-5 text-center gap-5">
                             <li>
-                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="#home" onClick={() => { setOpenNav(false) }} aria-label="Ir para a página inicial">Home</Link>
+                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="/" onClick={() => { setOpenNav(false) }} aria-label="Ir para a página inicial">Home</Link>
                             </li>
                             <li>
                                 <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="#sobre" onClick={() => { setOpenNav(false) }} aria-label="Informações sobre a empresa">Sobre</Link>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://https://phonevox-group-landing-page.vercel.app/sitemap.xml
