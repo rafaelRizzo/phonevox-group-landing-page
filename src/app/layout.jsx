@@ -64,14 +64,19 @@ export const metadata = {
   siteNavigation: {
     "@context": "https://schema.org",
     "@type": "SiteNavigationElement",
-    "name": ["Callcenter", "Soluções", "Sobre", "Área do cliente", "Contato"],
+    "name": ["Callcenter", "Soluções", "Área do cliente"],
     "url": [
       "https://www.phonevox.com.br/callcenter",
       "https://www.phonevox.com.br/solucoes",
-      "https://www.phonevox.com.br/area_do_cliente",
-      "https://central.phonevox.com.br/contato"
+      "https://www.phonevox.com.br/area_do_cliente"
+    ],
+    "description": [
+      "Tecnologia, eficiência e suporte 24/7 para transformar a experiência dos seus clientes.",  // Callcenter
+      "PABX, callcenter, consultoria, números VOIP, 0800 ilimitado e muito mais!",  // Soluções
+      "Acesse a área exclusiva para clientes e suporte.",  // Área do cliente
     ]
   }
+
 };
 
 export default function RootLayout({ children }) {

@@ -49,7 +49,6 @@ export default function Home() {
 
             <Faq perguntasFaq={perguntasFaq} />
 
-            <Ajuda />
         </LayoutLanding>
     );
 }
