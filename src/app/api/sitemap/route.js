@@ -1,4 +1,4 @@
-export async function GET() {
+export async function GET(req) {
     const baseUrl = "https://phonevox-group-landing-page.vercel.app";
 
     const pages = [
@@ -25,6 +25,8 @@ export async function GET() {
     return new Response(sitemap, {
         headers: {
             "Content-Type": "application/xml",
+            "Cache-Control": "public, max-age=0, must-revalidate",
         },
+        status: 200,
     });
 }
