@@ -3,11 +3,16 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
     const [openNav, setOpenNav] = useState(false);
+    const pathname = usePathname();
+    const isHome = pathname === "/";
+
+    const getLink = (hash) => (isHome ? hash : `/${hash}`);
 
     return (
         <>
@@ -28,13 +33,13 @@ export default function Navbar() {
                                 <Link href="/" aria-label="Ir para a página inicial">Home</Link>
                             </li>
                             <li>
-                                <Link href="#sobre" aria-label="Informações sobre a empresa">Sobre</Link>
+                                <Link href={getLink("#sobre")} aria-label="Informações sobre a empresa">Sobre</Link>
                             </li>
                             <li>
-                                <Link href="#solucoes" aria-label="Nossas soluções">Soluções</Link>
+                                <Link href={getLink("#solucoes")} aria-label="Nossas soluções">Soluções</Link>
                             </li>
                             <li>
-                                <Link href="#contato" aria-label="Contato da empresa">Contato</Link>
+                                <Link href={getLink("#contato")} aria-label="Contato da empresa">Contato</Link>
                             </li>
                             <li>
                                 <Link href="https://central.phonevox.com.br/" target="_blank" aria-label="Área do cliente">
@@ -69,13 +74,13 @@ export default function Navbar() {
                                 <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="/" onClick={() => { setOpenNav(false) }} aria-label="Ir para a página inicial">Home</Link>
                             </li>
                             <li>
-                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="#sobre" onClick={() => { setOpenNav(false) }} aria-label="Informações sobre a empresa">Sobre</Link>
+                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href={getLink("#sobre")} onClick={() => { setOpenNav(false) }} aria-label="Informações sobre a empresa">Sobre</Link>
                             </li>
                             <li>
-                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="#solucoes" onClick={() => { setOpenNav(false) }} aria-label="Nossas soluções">Soluções</Link>
+                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href={getLink("#solucoes")} onClick={() => { setOpenNav(false) }} aria-label="Nossas soluções">Soluções</Link>
                             </li>
                             <li>
-                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href="#contato" onClick={() => { setOpenNav(false) }} aria-label="Contato da empresa">Contato</Link>
+                                <Link className="flex border border-transparent hover:border-purple-700 rounded-md w-full justify-center p-2" href={getLink("#contato")} onClick={() => { setOpenNav(false) }} aria-label="Contato da empresa">Contato</Link>
                             </li>
                             <li>
                                 <Link className="flex w-full justify-center p-2 bg-primary-purple text-zinc-50 rounded-md" href="https://central.phonevox.com.br/" target="_blank" aria-label="Área do cliente">
