@@ -2,7 +2,7 @@ export default function SobreAPhonevox() {
     return (
         <>
             {/* Card falando sobre a empresa */}
-            <aside className="max-w-5xl p-5 my-5 mx-auto">
+            <aside className="max-w-7xl p-5 my-5 mx-auto">
                 <div className="flex flex-col gap-10 border border-purple-100 rounded-3xl bg-purple-100 text-purple-950 p-5 py-8">
                     <div className="text-center px-5">
                         <h2 className="font-semibold text-2xl">Seu cliente não pode esperar: ofereça atendimento rápido e eficiente!</h2>

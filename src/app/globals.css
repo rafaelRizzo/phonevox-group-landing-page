@@ -138,7 +138,7 @@ body {
 div.opa_ico {
   width: 50px;
   height: 50px;
-  background-color: #8609cb;
+  background-color: #581c87;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, .05));
 }
 
@@ -182,7 +182,6 @@ div.opa_rodape {
   border-radius: .375rem;
   font-size: .9rem;
 }
-
 
 div.opa_ballon.enviada div.time {
   color: #E4E4E4;

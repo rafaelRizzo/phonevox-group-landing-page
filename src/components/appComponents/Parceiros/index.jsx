@@ -11,7 +11,7 @@ export default function Parceiros({ logos }) {
     return (
         <>
             {/* Parceiros */}
-            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10" >
+            <section className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10" >
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Nossos parceiros</h2>
                     <h3 className="text-muted-foreground text-sm">Empresas que confiam em nosso potencial de potencializar seu atendimento</h3>
@@ -31,7 +31,7 @@ export default function Parceiros({ logos }) {
                             dragFree: true,  // Desabilita o drag manual,
 
                         }}
-                        className="w-full max-w-xs sm:max-w-md lg:max-w-2xl"  // Ajuste a largura para dispositivos móveis
+                        className="w-full max-w-xs sm:max-w-md lg:max-w-7xl"  // Ajuste a largura para dispositivos móveis
                     >
                         <CarouselContent>
                             {logos.map((logo, index) => {

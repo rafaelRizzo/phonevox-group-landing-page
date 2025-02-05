@@ -4,7 +4,7 @@ export default function Testemunhos({ testemunhos, activeIndex }) {
     return (
         <>
             {/* Testemunhos clientes */}
-            <section className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10" >
+            <section className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10" >
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Relatos de nossos clientes</h2>
                     <h3 className="text-muted-foreground text-sm">

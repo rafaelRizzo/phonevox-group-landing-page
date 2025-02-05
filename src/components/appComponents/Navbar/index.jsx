@@ -18,7 +18,7 @@ export default function Navbar() {
         <>
             {/* Navbar */}
             <nav className="hidden lg:block border-b border-purple-950/10 " aria-label="breadcrumb">
-                <ul className="flex flex-col lg:flex-row items-center justify-between max-w-5xl px-5 py-3.5 mx-auto">
+                <ul className="flex flex-col lg:flex-row items-center justify-between max-w-7xl px-5 py-3.5 mx-auto">
                     {/* Logo */}
                     <li>
                         <Link href="/" aria-label="Página inicial">
