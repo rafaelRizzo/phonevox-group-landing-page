@@ -13,7 +13,7 @@ export default function Ajuda() {
                             <p className="text-purple-100/95">Precisa de mais informações?</p>
                             <p className="text-sm text-purple-300/80 font-light">Entre em contato com um de nossos especialistas para tirar suas dúvidas.</p>
                         </div>
-                        <Link href="https://wa.me/551832568300" target="_blank">
+                        <Link href="https://wa.me/558003533000" target="_blank">
                             <Button className="bg-zinc-50 hover:bg-zinc-100 text-zinc-950">Entrar em contato</Button>
                         </Link>
                     </div>

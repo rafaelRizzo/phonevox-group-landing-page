@@ -15,7 +15,6 @@ export default function Parceiros({ logos }) {
                 <div className="text-center px-5">
                     <h2 className="font-semibold text-2xl">Nossos parceiros</h2>
                     <h3 className="text-muted-foreground text-sm">Empresas que confiam em nosso potencial de potencializar seu atendimento</h3>
-
                 </div>
 
                 <div className="mx-auto select-none">
@@ -31,7 +30,7 @@ export default function Parceiros({ logos }) {
                             dragFree: true,  // Desabilita o drag manual,
 
                         }}
-                        className="w-full max-w-xs sm:max-w-md lg:max-w-7xl"  // Ajuste a largura para dispositivos móveis
+                        className="w-full max-w-sm lg:max-w-4xl"
                     >
                         <CarouselContent>
                             {logos.map((logo, index) => {

@@ -68,7 +68,7 @@ export default function PorQueAPhonevox() {
                                 <p className="text-md">Relatórios detalhados</p>
                             </li>
                         </ul>
-                        <Link href="https://wa.me/551832568300" target="_blank">
+                        <Link href="https://wa.me/558003533000" target="_blank">
                             <Button className="bg-primary-purple mt-4 w-full lg:w-auto">Tenho interesse!</Button>
                         </Link>
                     </div>
