@@ -5,7 +5,7 @@ export default function Callcenter() {
     return (
         <>
             <LayoutLanding>
-                <div className="max-w-5xl p-5 my-5 mx-auto flex flex-col gap-10">
+                <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                     <main className="flex flex-col gap-2">
                         <div>
                             <h1 className="text-purple-950 text-4xl font-bold">Callcenter</h1>

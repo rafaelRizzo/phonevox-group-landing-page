@@ -35,9 +35,9 @@ export default function Home() {
         <LayoutLanding>
             <Main />
 
-            <PorQueAPhonevox />
-
             <SobreAPhonevox />
+
+            <PorQueAPhonevox />
 
             <Solucoes />
 

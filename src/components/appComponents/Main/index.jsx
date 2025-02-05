@@ -5,10 +5,10 @@ export default function Main() {
     return (
         <>
             {/* Main section */}
-            <main id="home" className="max-w-5xl p-5 my-5 mx-auto flex flex-col lg:flex-row items-center justify-between gap-x-8">
+            <main id="home" className="max-w-7xl p-5 my-5 mx-auto flex flex-col lg:flex-row items-center justify-between gap-x-8">
 
                 <div className="flex-1 flex flex-col">
-                    <h1 className="text-4xl font-bold text-center lg:text-start">Seu cliente ainda está esperando enquanto você lê isso...</h1>
+                    <h1 className="text-3xl lg:text-5xl font-semibold text-center lg:text-start">Seu cliente ainda está esperando enquanto você lê isso...</h1>
                     <h2 className="text-muted-foreground text-center lg:text-start">Nós podemos ajudar a resolver isso agora!</h2>
 
                     <Link href="https://wa.me/551832568300" target="_blank" className="w-full my-4">
