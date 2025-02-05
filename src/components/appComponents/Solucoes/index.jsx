@@ -24,7 +24,7 @@ export default function Solucoes() {
                         <CardDescription className="text-center">
                             <p>A partir de R$ 287,00/mês</p>
 
-                            <Link href="https://wa.me/551832568300" target="_blank">
+                            <Link href="https://wa.me/558003533000" target="_blank">
                                 <Button className="bg-purple-700 hover:bg-purple-800 w-full mt-5">
                                     Saiba mais
                                 </Button>
@@ -90,7 +90,7 @@ export default function Solucoes() {
 
                             <CardDescription className="text-center">
                                 <p>A partir de R$ 907,00/mês</p>
-                                <Link href="https://wa.me/551832568300" target="_blank">
+                                <Link href="https://wa.me/558003533000" target="_blank">
                                     <Button className="bg-purple-700 hover:bg-purple-800 w-full mt-5">
                                         Saiba mais
                                     </Button>
@@ -150,7 +150,7 @@ export default function Solucoes() {
                         <CardDescription className="text-center">
                             <p>A partir de R$ 67,00/mês</p>
 
-                            <Link href="https://wa.me/551832568300" target="_blank">
+                            <Link href="https://wa.me/558003533000" target="_blank">
                                 <Button className="bg-purple-700 hover:bg-purple-800 w-full mt-5">
                                     Saiba mais
                                 </Button>

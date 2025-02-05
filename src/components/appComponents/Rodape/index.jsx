@@ -16,7 +16,7 @@ export default function Rodape() {
                     <div className="flex flex-col items-center lg:flex-row justify-between">
                         <div className="flex flex-col items-center max-w-xs gap-2">
                             <Image src="/logo-phonevox-white.webp" alt="Logo da empresa" width={200} height={200} loading="lazy" />
-                            <p className="text-purple-300 font-light">#A GENTE NÃO PARA NUNCA</p>
+                            <p className="text-purple-300 font-light">#AGenteNãoParaNunca</p>
                         </div>
 
                         <div className="grid grid-cols-1 place-content-center place-items-center lg:place-items-start lg:place-content-start text-center lg:text-start lg:flex text-purple-100 gap-10 mt-10 lg:mt-0">

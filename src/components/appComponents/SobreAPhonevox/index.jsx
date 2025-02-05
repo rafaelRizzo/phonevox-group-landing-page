@@ -14,7 +14,7 @@ export default function SobreAPhonevox() {
                             <div className="font-semibold flex-1 min-h-12 justify-center items-center flex text-lg">Anos de atuação</div>
                             <div className="flex-1 font-light text-purple-800 text-2xl mt-2">7+</div>
                         </div>
-                        <div className="flex flex-col justify-center border-l border-r-0 lg:border-r border-purple-950/15">
+                        <div className="flex flex-col justify-center lg:border-l lg:border-r border-purple-950/15">
                             <div className="font-semibold flex-1 min-h-12 justify-center items-center flex text-lg">Empresas</div>
                             <div className="flex-1 font-light text-purple-800 text-2xl mt-2">1K</div>
                         </div>
@@ -22,7 +22,7 @@ export default function SobreAPhonevox() {
                             <div className="font-semibold flex-1 min-h-12 justify-center items-center flex text-lg">Atendimentos</div>
                             <div className="flex-1 font-light text-purple-800 text-2xl mt-2">1M</div>
                         </div>
-                        <div className="flex flex-col justify-center border-l border-r-0 lg:border-r border-purple-950/15">
+                        <div className="flex flex-col justify-center lg:border-l lg:border-r border-purple-950/15">
                             <div className="font-semibold flex-1 min-h-12 justify-center items-center flex text-lg">TME</div>
                             <div className="flex-1 font-light text-purple-800 text-2xl mt-2">10s</div>
                         </div>
@@ -31,6 +31,7 @@ export default function SobreAPhonevox() {
                             <div className="flex-1 font-light text-purple-800 text-2xl mt-2">5</div>
                         </div>
                     </div>
+
                 </div>
 
             </aside>
