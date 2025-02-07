@@ -1,9 +1,15 @@
 import LayoutLanding from "@/LayoutLanding";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Sobre() {
     return (
         <>
+            <Head>
+                <title>Sobre</title>
+                <meta name="description" content="Saiba mais sobre nossa trajetória." />
+            </Head>
+
             <LayoutLanding>
                 <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                     <main className="flex flex-col gap-2">

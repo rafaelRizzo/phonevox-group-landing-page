@@ -1,9 +1,15 @@
 import LayoutLanding from "@/LayoutLanding";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Callcenter() {
     return (
         <>
+            <Head>
+                <title>Phonevox - Callcenter</title>
+                <meta name="description" content="Conheça os nossos serviços de call center" />
+            </Head>
+
             <LayoutLanding>
                 <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                     <main className="flex flex-col gap-2">

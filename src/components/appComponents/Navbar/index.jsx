@@ -14,8 +14,26 @@ export default function Navbar() {
 
     const getLink = (hash) => (isHome ? hash : `/${hash}`);
 
+    // Estrutura JSON-LD do BreadcrumbList
+    const breadcrumbList = [
+        { "@type": "ListItem", position: 1, name: "Home", item: "/" },
+        { "@type": "ListItem", position: 2, name: "Callcenter", item: getLink("/callcenter") },
+        { "@type": "ListItem", position: 3, name: "Soluções", item: getLink("/solucoes") },
+        { "@type": "ListItem", position: 4, name: "Sobre", item: getLink("#sobre") },
+        { "@type": "ListItem", position: 5, name: "Contato", item: getLink("#contato") },
+    ];
+
     return (
         <>
+            {/* Breadcrumb JSON-LD */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    itemListElement: breadcrumbList,
+                })}
+            </script>
+
             {/* Navbar */}
             <nav className="hidden lg:block border-b border-purple-950/10 " aria-label="breadcrumb">
                 <ul className="flex flex-col lg:flex-row items-center justify-between max-w-7xl px-5 py-3.5 mx-auto">
