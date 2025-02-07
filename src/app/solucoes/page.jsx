@@ -1,9 +1,15 @@
 import LayoutLanding from "@/LayoutLanding";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Solucoes() {
     return (
         <>
+            <Head>
+                <title>Soluções</title>
+                <meta name="description" content="Callcenter, integração com IXCSoft, Hubsoft, SGP, 0800 ilimitado e muito mais!" />
+            </Head>
+
             <LayoutLanding>
                 <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                     <main className="flex flex-col gap-2">
