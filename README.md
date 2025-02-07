@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Phonevox Landing Page
+A Phonevox Landing Page é uma página web desenvolvida para promover os serviços e soluções da Phonevox. Ela contém informações sobre a empresa, suas soluções, formas de contato e uma área exclusiva para clientes.
 
-## Getting Started
+<img src="overview-site.png" alt="Phonevox Landing Page" width="800">
 
-First, run the development server:
+#### Tecnologias Utilizadas
+- Next.js 
+- Shadcn UI 
+- Tailwind CSS 
+- Docker
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#### Estrutura da Página
+A landing page é dividida em várias seções:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Home: Apresentação inicial da empresa e sua proposta de valor.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Sobre: Informações detalhadas sobre a Phonevox, missão, visão e valores.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Soluções: Descrição dos serviços e soluções oferecidas pela empresa.
 
-## Learn More
+- Contato: Formulário de contato e detalhes para o envio de mensagens.
 
-To learn more about Next.js, take a look at the following resources:
+- Callcenter: Link para acessar a plataforma exclusiva para clientes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Área do Cliente: Link para acessar a plataforma exclusiva para clientes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Instruções de Execução
+Requisitos
 
-## Deploy on Vercel
+- Node.js v22 ou superior
+- Nginx
+- npm v7 ou superior
+- Docker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Rodando com Docker
+Para rodar a aplicação em um container Docker, siga as etapas abaixo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Construir a imagem Docker: `docker build -t phonevox-site .`
+
+Rodar o container: `docker run -d --restart always -p porta_publica:porta_interna --name phonevox-app phonevox-site`
+
+Acesse a página no navegador: `http://localhost:PORT`
+
+#### Recompilando imagem
+Caso você altere algo e precise dar um git pull do repositório, pode fazer os seguinte.
+
+Terá um arquivo com o nome de rebuild-docker.sh que você pode rodar ou depois tentar integrar com github actions.
+
