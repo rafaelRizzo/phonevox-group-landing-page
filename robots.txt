@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /public/favicon.ico
 
-Sitemap: https://phonevox-group.rafael-rizzo.com/sitemap.xml
+Sitemap: https://phonevox.com.br/sitemap.xml

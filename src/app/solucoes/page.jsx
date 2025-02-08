@@ -1,10 +1,22 @@
+import { Button } from "@/components/ui/button";
 import LayoutLanding from "@/LayoutLanding";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Solucoes() {
     return (
         <>
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    name: "Soluções",
+                    description: "Conheça nossas soluções: Callcenter, VOIP e PABX.",
+                    url: "https://phonevox.com.br/solucoes",
+                })}
+            </script>
+
             <Head>
                 <title>Soluções</title>
                 <meta name="description" content="Callcenter, integração com IXCSoft, Hubsoft, SGP, 0800 ilimitado e muito mais!" />
@@ -19,7 +31,7 @@ export default function Solucoes() {
                         </div>
                     </main>
 
-                    <aside className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <aside className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div>
                             <p>
                                 A Phonevox oferece soluções completas de VOIP e PABX na nuvem, garantindo atendimento ágil e de alta qualidade. Criamos fluxos de atendimento customizados e integramos nossa URA inteligente aos principais ERPs, como IXCSoft, SGP e Hubsoft, para otimizar cada interação e oferecer um serviço rápido e personalizado.
@@ -29,6 +41,11 @@ export default function Solucoes() {
                                 Com números VOIP, sua empresa ganha flexibilidade e controle. A Phonevox assegura que sua comunicação seja sempre eficiente e sem falhas, proporcionando a melhor experiência para seus clientes.
                             </p>
 
+                            <div className="w-full my-4">
+                                <Link href="https://wa.me/558003533000" target="_blank">
+                                    <Button className="w-full bg-primary-purple rounded-lg">Saiba mais</Button>
+                                </Link>
+                            </div>
                         </div>
                         <Image src="/images/callcenter.webp" alt="callcenter" width={1920} height={1080} className="h-full w-full object-cover rounded-3xl" />
                     </aside>

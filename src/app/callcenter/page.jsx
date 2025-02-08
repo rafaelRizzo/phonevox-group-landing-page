@@ -5,6 +5,16 @@ import Head from "next/head";
 export default function Callcenter() {
     return (
         <>
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    name: "Callcenter",
+                    description: "Saiba mais sobre a Phonevox, o callcenter que mais cresce no Brasil com soluções VOIP e PABX na nuvem.",
+                    url: "https://phonevox.com.br/callcenter",
+                })}
+            </script>
+
             <Head>
                 <title>Phonevox - Callcenter</title>
                 <meta name="description" content="Conheça os nossos serviços de call center" />
@@ -34,7 +44,7 @@ export default function Callcenter() {
                                 Com suporte especializado 24 horas por dia, 7 dias por semana, incluindo feriados, nossa missão é potencializar a comunicação e ajudar sua empresa a atender seus clientes de forma eficiente, personalizada e sem falhas. Pronto para transformar seu atendimento? A Phonevox tem a solução completa que você precisa.
                             </p>
                         </div>
-                        <Image src="/images/callcenter-3.webp" alt="callcenter" width={1920} height={1080} className="h-[450px]  object-contain lg:object-fill  rounded-3xl" />
+                        <Image src="/images/callcenter-3.webp" alt="callcenter" width={1920} height={1080} className="h-[450px] object-contain lg:object-fill  rounded-3xl" />
                     </aside>
 
                 </div>
