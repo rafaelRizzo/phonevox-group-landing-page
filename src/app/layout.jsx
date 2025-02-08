@@ -11,8 +11,8 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Phonevox - Call Center, VOIP e PABX na Nuvem para Empresas",
-  description: "Call Center completo com soluções VOIP, PABX, números VoIP, integração com IXC, SGP, Hubsoft e suporte especializado 24/7. Otimize seu atendimento com a Phonevox!",
-  keywords: "call center, fornecedores callcenter, VOIP, PABX na nuvem, números VoIP, IXC, ixcsoft, SGP, Hubsoft, atendimento empresarial, suporte 24/7, telecomunicação, suporte asterisk, suporte freepbx, suporte magnus, suporte issabel, telefonia IP, callcenter são paulo, callcenter região de são paulo",
+  description: "Call Center completo com soluções VOIP, PABX, números VoIP, integração com IXC, SGP, Hubsoft e suporte especializado 24/7. Otimize com a Phonevox!",
+  keywords: "call center, contact center, callcenter, integracao ixc, telefonia em nuvem, telefonia inteligente, integracao com erp e telefonia, fornecedores callcenter, VOIP, PABX na nuvem, números VoIP, IXC, ixcsoft, SGP, Hubsoft, atendimento empresarial, suporte 24/7, telecomunicação, suporte asterisk, suporte freepbx, suporte magnus, suporte issabel, telefonia IP, callcenter são paulo, callcenter região de são paulo",
   author: "Phonevox Group",
   robots: "index, follow",
   language: "pt-BR",

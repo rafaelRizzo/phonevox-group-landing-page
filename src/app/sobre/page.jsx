@@ -5,34 +5,46 @@ import Image from "next/image";
 export default function Sobre() {
     return (
         <>
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    name: "Sobre",
+                    description: "Conheça a trajetória da Phonevox, nossa estrutura, história e compromisso com a inovação em comunicação.",
+                    url: "https://phonevox.com.br/sobre",
+                })}
+            </script>
+
             <Head>
-                <title>Sobre</title>
-                <meta name="description" content="Saiba mais sobre nossa trajetória." />
+                <title>Phonevox - Sobre</title>
+                <meta name="description" content="Descubra a história da Phonevox, sua infraestrutura moderna e seu compromisso com soluções VOIP e PABX na nuvem." />
             </Head>
 
             <LayoutLanding>
                 <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                     <main className="flex flex-col gap-2">
                         <div>
-                            <h1 className="text-purple-950 text-4xl font-bold">Sobre</h1>
-                            <h2 className="text-muted-foreground">O Callcenter que mais cresce no Brasil!</h2>
+                            <h1 className="text-purple-950 text-4xl font-bold">Sobre a Phonevox</h1>
+                            <h2 className="text-muted-foreground">Transformando a comunicação empresarial com tecnologia e inovação!</h2>
                         </div>
                     </main>
 
-                    <aside className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <aside className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div>
                             <p>
-                                A Phonevox oferece soluções completas de VOIP e PABX na nuvem, garantindo atendimento ágil e de alta qualidade. Criamos fluxos de atendimento customizados e integramos nossa URA inteligente aos principais ERPs, como IXCSoft, SGP e Hubsoft, para otimizar cada interação e oferecer um serviço rápido e personalizado.
+                                Fundada com o propósito de revolucionar a comunicação empresarial, a Phonevox se tornou referência no mercado de soluções VOIP e PABX na nuvem. Nossa missão é proporcionar tecnologia de ponta para empresas de todos os portes, garantindo qualidade, eficiência e economia nas telecomunicações.
                             </p>
                             <br />
                             <p>
-                                Com números VOIP, sua empresa ganha flexibilidade e controle. A Phonevox assegura que sua comunicação seja sempre eficiente e sem falhas, proporcionando a melhor experiência para seus clientes.
+                                Contamos com uma infraestrutura robusta e altamente escalável, capaz de atender às necessidades dos mais diversos segmentos. Nosso time é formado por especialistas em tecnologia e atendimento, sempre focados em oferecer suporte ágil e eficiente.
                             </p>
-
+                            <br />
+                            <p>
+                                Além disso, integramos nossa URA inteligente a ERPs renomados, como IXCSoft, SGP e Hubsoft, otimizando a experiência do usuário e automatizando processos para um atendimento ainda mais dinâmico.
+                            </p>
                         </div>
                         <Image src="/images/callcenter.webp" alt="callcenter" width={1920} height={1080} className="h-full w-full object-cover rounded-3xl" />
                     </aside>
-
                 </div>
             </LayoutLanding>
         </>
