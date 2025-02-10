@@ -60,7 +60,7 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <Link href="https://central.phonevox.com.br/" target="_blank" aria-label="Área do cliente">
-                                    <Button className="bg-primary-purple rounded-md">Área do cliente</Button>
+                                    <Button className="bg-primary-purple rounded-md">Solicitar fatura</Button>
                                 </Link>
                             </li>
                         </ul>
