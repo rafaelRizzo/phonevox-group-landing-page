@@ -32,6 +32,8 @@ export const metadata = {
     other: "/favicon/favicon.ico",
   },
 
+  canonical: "https://www.phonevox.com.br",
+
   structuredData: {
     "@context": "https://schema.org",
     "@type": "Organization",

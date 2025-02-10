@@ -27,13 +27,13 @@ export default function Rodape() {
                                         <Link href="/">Home</Link>
                                     </li>
                                     <li>
-                                        <Link href="/sobre">Sobre</Link>
+                                        <Link href="/sobre" aria-label="Sobre nós">Sobre</Link>
                                     </li>
                                     <li>
-                                        <Link href="/solucoes">Soluções</Link>
+                                        <Link href="/solucoes" aria-label="Nossas soluções">Soluções</Link>
                                     </li>
                                     <li>
-                                        <Link href="/callcenter">Callcenter</Link>
+                                        <Link href="/callcenter" aria-label="Callcenter">Callcenter</Link>
                                     </li>
                                     <li>
                                         <Link href="https://central.phonevox.com.br/" target="_blank" aria-label="Área do cliente">Área do cliente</Link>
