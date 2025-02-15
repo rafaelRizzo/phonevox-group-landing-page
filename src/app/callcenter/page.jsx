@@ -1,23 +1,19 @@
 import LayoutLanding from "@/LayoutLanding";
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Callcenter() {
     return (
         <>
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    name: "Callcenter",
-                    description: "Saiba mais sobre a Phonevox, o callcenter que mais cresce no Brasil com soluções VOIP e PABX na nuvem.",
-                    url: "https://phonevox.com.br/callcenter",
-                })}
-            </script>
-
             <Head>
-                <title>Phonevox - Callcenter</title>
-                <meta name="description" content="Conheça os nossos serviços de call center" />
+                <title>Callcenter - Phonevox</title>
+                <meta name="description" content="Conheça os nossos serviços de call center, com soluções personalizadas para empresas de todos os tamanhos, garantindo eficiência e qualidade no atendimento." />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Callcenter - Phonevox" />
+                <meta property="og:description" content="Conheça os nossos serviços de call center, com soluções personalizadas para empresas de todos os tamanhos, garantindo eficiência e qualidade no atendimento." />
+                <meta property="og:url" content="https://phonevox.com.br/callcenter" />
+                <meta property="og:type" content="website" />
             </Head>
 
             <LayoutLanding>

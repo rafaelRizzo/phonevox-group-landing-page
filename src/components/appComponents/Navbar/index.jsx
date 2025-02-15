@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Breadcrumbs from "../Breadcrumbs";
 
 export default function Navbar() {
     const [openNav, setOpenNav] = useState(false);
@@ -13,25 +14,9 @@ export default function Navbar() {
     const isHome = pathname === "/";
 
     const getLink = (hash) => (isHome ? hash : `/${hash}`);
-    // Estrutura JSON-LD do BreadcrumbList
-    const breadcrumbList = [
-        { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-        { "@type": "ListItem", position: 2, name: "Sobre", item: "/sobre" },
-        { "@type": "ListItem", position: 3, name: "Callcenter", item: "/callcenter" },
-        { "@type": "ListItem", position: 4, name: "Soluções", item: "solucoes" },
-    ];
-
     return (
         <>
-
-            {/* Breadcrumb JSON-LD */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    itemListElement: breadcrumbList,
-                })}
-            </script>
+            <Breadcrumbs />
 
             {/* Navbar */}
             <nav className="hidden lg:block border-b border-purple-950/10 " aria-label="breadcrumb">

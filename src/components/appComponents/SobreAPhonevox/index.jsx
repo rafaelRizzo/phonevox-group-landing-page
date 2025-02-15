@@ -12,7 +12,7 @@ export default function SobreAPhonevox() {
                     <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 text-center">
                         <div className="flex flex-col justify-center">
                             <div className="font-semibold flex-1 min-h-12 justify-center items-center flex text-lg">Anos de atuação</div>
-                            <div className="flex-1 font-light text-purple-800 text-2xl mt-2">7+</div>
+                            <div className="flex-1 font-light text-purple-800 text-2xl mt-2">8+</div>
                         </div>
                         <div className="flex flex-col justify-center lg:border-l lg:border-r border-purple-950/15">
                             <div className="font-semibold flex-1 min-h-12 justify-center items-center flex text-lg">Empresas</div>

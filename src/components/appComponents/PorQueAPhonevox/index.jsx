@@ -16,7 +16,7 @@ export default function PorQueAPhonevox() {
 
                     <div className="flex-1 rounded-3xl overflow-hidden">
                         <video
-                            className="aspect-auto object-cover rounded-3xl min-h-[320px]"
+                            className="aspect-auto object-cover rounded-3xl min-h-full lg:min-h-[320px] min-w-full lg:min-w-[500px]"
                             loop
                             autoPlay
                             muted
