@@ -5,19 +5,16 @@ import Image from "next/image";
 export default function Sobre() {
     return (
         <>
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    name: "Sobre",
-                    description: "Conheça a trajetória da Phonevox, nossa estrutura, história e compromisso com a inovação em comunicação.",
-                    url: "https://phonevox.com.br/sobre",
-                })}
-            </script>
-
             <Head>
                 <title>Phonevox - Sobre</title>
-                <meta name="description" content="Descubra a história da Phonevox, sua infraestrutura moderna e seu compromisso com soluções VOIP e PABX na nuvem." />
+                <meta name="description" content="Descubra a história da Phonevox, sua infraestrutura moderna e seu compromisso com soluções VOIP e PABX na nuvem, focando em inovação e qualidade no atendimento." />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Phonevox - Sobre" />
+                <meta property="og:description" content="Descubra a história da Phonevox, sua infraestrutura moderna e seu compromisso com soluções VOIP e PABX na nuvem, focando em inovação e qualidade no atendimento." />
+                <meta property="og:url" content="https://phonevox.com.br/sobre" />
+                <meta property="og:type" content="website" />
+
             </Head>
 
             <LayoutLanding>

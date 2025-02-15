@@ -18,5 +18,11 @@
         "id": 4,
         "question": "Preciso falar sobre meu plano",
         "answer": "Estamos sempre à disposição para ajudá-lo com qualquer dúvida ou necessidade relacionada ao seu plano. Entre em contato pelo telefone ou WhatsApp no número (18) 3256-8300. Nosso time está pronto para atender você!"
+    },
+    {
+        "id": 5,
+        "question": "Faq técnico Issabel PBX",
+        "answer": "Com o compromisso de sempre oferecer o melhor para nossos clientes, disponibilizamos um FAQ com acesso rápido para esclarecer suas dúvidas e auxiliar nas configurações básicas. Acesse: https://faq.phonevox.com.br",
+        "link": "https://faq.phonevox.com.br"
     }
 ]

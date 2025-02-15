@@ -7,19 +7,15 @@ import Link from "next/link";
 export default function Solucoes() {
     return (
         <>
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    name: "Soluções",
-                    description: "Conheça nossas soluções: Callcenter, VOIP e PABX.",
-                    url: "https://phonevox.com.br/solucoes",
-                })}
-            </script>
-
             <Head>
-                <title>Soluções</title>
-                <meta name="description" content="Callcenter, integração com IXCSoft, Hubsoft, SGP, 0800 ilimitado e muito mais!" />
+                <title>Soluções - Phonevox</title>
+                <meta name="description" content="A Phonevox oferece soluções completas de VOIP e PABX na nuvem, garantindo atendimento ágil e de alta qualidade. Criamos fluxos de atendimento customizados e integramos nossa URA inteligente aos principais ERPs, como IXCSoft, SGP e Hubsoft." />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Soluções - Phonevox" />
+                <meta property="og:description" content="A Phonevox oferece soluções completas de VOIP e PABX na nuvem, garantindo atendimento ágil e de alta qualidade. Criamos fluxos de atendimento customizados e integramos nossa URA inteligente aos principais ERPs, como IXCSoft, SGP e Hubsoft." />
+                <meta property="og:url" content="https://phonevox.com.br/solucoes" />
+                <meta property="og:type" content="website" />
             </Head>
 
             <LayoutLanding>

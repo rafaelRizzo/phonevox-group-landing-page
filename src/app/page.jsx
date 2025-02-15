@@ -13,7 +13,6 @@ import Testemunhos from "@/components/appComponents/Testemunhos";
 import SloganSecundario from "@/components/appComponents/SloganSecundario";
 import Faq from "@/components/appComponents/Faq";
 import Solucoes from "@/components/appComponents/Solucoes";
-import Ajuda from "@/components/appComponents/Ajuda";
 
 export default function Home() {
     const [activeIndex, setActiveIndex] = useState(0);
