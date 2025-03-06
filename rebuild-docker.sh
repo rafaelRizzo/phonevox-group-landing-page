@@ -6,20 +6,21 @@ CONTAINER_NAME="phonevox-app"
 # Nome da imagem
 IMAGE_NAME="phonevox-site"
 
-# Parar todos os containers em execução
-echo "Parando todos os containers..."
-docker stop $(docker ps -q)
+# Atualiza o repositório
+echo "Atualizando código do repositório..."
+git pull
 
-# Remover todos os containers
-echo "Removendo todos os containers..."
-docker rm $(docker ps -a -q)
-
-# Build da nova imagem
-echo "Fazendo o build da nova imagem..."
+# Faz o build da nova imagem
+echo "Buildando nova imagem..."
 docker build -t $IMAGE_NAME .
 
-# Rodar o novo container
-echo "Rodando o novo container..."
+# Para e remove só o container do site (não todos)
+echo "Parando e removendo o container antigo..."
+docker stop $CONTAINER_NAME
+docker rm $CONTAINER_NAME
+
+# Sobe o novo container com a nova imagem
+echo "Subindo novo container..."
 docker run -d --restart always -p 3000:3000 --name $CONTAINER_NAME $IMAGE_NAME
 
-echo "Processo concluído!"
+echo "Deploy concluído!"
