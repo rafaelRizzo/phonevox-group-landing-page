@@ -84,7 +84,7 @@ export default function Solucoes() {
                         <Card className="p-5 shadow-none border-purple-600 rounded-t-none min-h-[600px]">
 
                             <CardTitle className="text-center text-2xl mt-4">
-                                <h5 className="text-purple-950">Callcenter</h5>
+                                <h5 className="text-purple-950">Call Center</h5>
                                 <h6 className="text-purple-800">para provedores</h6>
                             </CardTitle>
 
