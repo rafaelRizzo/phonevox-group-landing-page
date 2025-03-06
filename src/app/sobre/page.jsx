@@ -10,6 +10,9 @@ export const generateMetadata = () => {
             url: "https://phonevox.com.br/sobre",
             type: "website",
         },
+        alternates: {
+            canonical: "https://www.phonevox.com.br/sobre",
+        },
     };
 };
 
