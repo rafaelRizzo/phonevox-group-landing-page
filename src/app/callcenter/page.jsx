@@ -23,7 +23,7 @@ export default function Callcenter() {
             <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                 <main className="flex flex-col gap-2">
                     <div>
-                        <h1 className="text-purple-950 text-4xl font-bold">Callcenter</h1>
+                        <h1 className="text-purple-950 text-4xl font-bold">Call Center</h1>
                         <h2 className="text-muted-foreground">Tecnologia, eficiência e suporte 24/7 para transformar a experiência dos seus clientes.</h2>
                     </div>
                 </main>
