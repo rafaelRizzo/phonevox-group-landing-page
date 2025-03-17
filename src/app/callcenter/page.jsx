@@ -4,10 +4,10 @@ import Image from "next/image";
 export const generateMetadata = () => {
     return {
         title: "Call Center - Phonevox",
-        description: "A Phonevox oferece soluções completas de VOIP e PABX na nuvem, garantindo atendimento ágil e de alta qualidade. Criamos fluxos de atendimento customizados e integramos nossa URA inteligente aos principais ERPs, como IXCSoft, SGP e Hubsoft.",
+        description: "Soluções completas em Call Center para sua empresa! Atendimento ágil, eficiente e personalizado para melhorar a experiência do cliente. Contamos com tecnologia avançada, equipe qualificada e suporte 24/7 para otimizar suas operações e aumentar a satisfação dos seus clientes",
         openGraph: {
             title: "Call Center - Phonevox",
-            description: "Conheça os nossos serviços de call center, com soluções personalizadas para empresas de todos os tamanhos, garantindo eficiência e qualidade no atendimento.",
+            description: "Soluções completas em Call Center para sua empresa! Atendimento ágil, eficiente e personalizado para melhorar a experiência do cliente. Contamos com tecnologia avançada, equipe qualificada e suporte 24/7 para otimizar suas operações e aumentar a satisfação dos seus clientes",
             url: "https://phonevox.com.br/callcenter",
             type: "website",
         },
