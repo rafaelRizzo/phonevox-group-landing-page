@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export const generateMetadata = () => {
     return {
-        title: "Phonevox - Sobre",
+        title: "Sobre - Phonevox",
         description: "Descubra a história da Phonevox, sua infraestrutura moderna e seu compromisso com soluções VOIP e PABX na nuvem, focando em inovação e qualidade no atendimento.",
         openGraph: {
-            title: "Phonevox - Sobre",
+            title: "Sobre - Phonevox",
             description: "Descubra a história da Phonevox, sua infraestrutura moderna e seu compromisso com soluções VOIP e PABX na nuvem, focando em inovação e qualidade no atendimento.",
             url: "https://phonevox.com.br/sobre",
             type: "website",
@@ -23,7 +23,7 @@ export default function Sobre() {
             <div className="max-w-7xl p-5 my-5 mx-auto flex flex-col gap-10">
                 <main className="flex flex-col gap-2">
                     <div>
-                        <h1 className="text-purple-950 text-4xl font-bold">Sobre a Phonevox</h1>
+                        <h1 className="text-purple-950 text-4xl font-bold">Sobre</h1>
                         <h2 className="text-muted-foreground">Transformando a comunicação empresarial com tecnologia e inovação!</h2>
                     </div>
                 </main>
